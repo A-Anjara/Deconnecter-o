@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libérez le potentiel de votre enfant | De-Connecte</title>
+    <meta name="description" content="Ateliers basés sur les neurosciences pour réduire le temps d'écran.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+<style>
+
+</style>
+</head>
+
+<body class="box-border">
+
+    <header
+        class="w-full text-sm flex-wrap justify-between flex items-center fixed top-0 z-50 py-2 px-2 lg:px-6 backdrop-blur-xs border-gray-800 text-white transition-all duration-600">
+        <div class="order-1">
+            <a href="/" class="block flex items-center gap-1 font-black font-inter ">
+                <div>
+                    <img src="./assets/Logo.png" class="w-10" alt="">
+                </div>
+                <div class="flex-col flex sm:hidden md:flex">
+                    <span class="font-bold text-lg">Dé-connecté</span>
+                    <span class="text-xs font-light">Réveille le génie en toi</span>
+                </div>
+            </a>
+        </div>
+        <nav class="w-fit sm:grow order-3 sm:order-2 group has-checked:w-full sm:has-checked:w-fit has-checked:p-3"
+            aria-label="Menu principal">
+            <label class="block sm:hidden  rounded-full w-full ">
+                <input type="checkbox" class="hidden">
+                <div class="flex flex-col gap-1 size-[40px] p-2 border rounded-full justify-center group-has-checked:hidden"
+                    id="mobile-menu">
+                    <div class="bg-white w-full h-[2px]"></div>
+                    <div class="bg-white w-full h-[2px]"></div>
+                    <div class="bg-white w-full h-[2px]"></div>
+                </div>
+                <div class="text-xl hidden group-has-checked:block text-end border-t-1 border-t-black">
+                    x
+                </div>
+            </label>
+
+
+
+            <ul
+                class=" p-2 hidden group-has-checked:flex flex-col sm:flex-row sm:flex items-center gap-4 lg:gap-8 justify-center ">
+                <li><a href="#" class="text-[#3A3DFF] transition-colors underline underline-offset-8">Accueil</a>
+                </li>
+                <li><a href="./a-propos/index.html" class="hover:text-[#3A3DFF] transition-colors ">A propos</a></li>
+                <li><a href="./ateliers/index.html" class="hover:text-[#3A3DFF] transition-colors">Nos ateliers</a></li>
+                <li><a href="./contact/index.html" class="hover:text-[#3A3DFF] transition-colors">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="order-2 sm:order-3">
+            <a href="#inscription"
+                class="hidden sm:block bg-[#112772] text-white font-medium py-2 px-3 sm:px-6 lg:px-12 rounded-full shadow-md hover:shadow-lg hover:brightness-110 transition-all transform active:scale-95">
+                Inscrivez-vous
+            </a>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section
+            class="relative flex flex-col items-center sm:items-start overflow-hidden h-[100vh] max-h-[100vh] font-poppins text-white ">
+            <div class="absolute top-0 left-0 h-full p-1" id="marker_header"></div>
+            <h1 class="text-4xl md:text-5xl lg:text-7xl pt-18 lg:pt-24 sm:pl-8 w-9/10 sm:w-7/11">
+                Libérez le vrai potentiel de votre enfant
+            </h1>
+            <p class="text-sm md:text-base lg:text-lg w-9/10 sm:w-3/5 sm:pl-8">
+                Aidez votre enfant (de 5 à 15 ans) à maîtriser son temps d'écran, à retrouver sa concentration
+                et à libérer son plein potentiel grâce à une approche basée sur les neurosciences.
+            </p>
+            <div class="grow flex flex-col-reverse w-full">
+                <div class="hidden sm:block bg-white rounded-tr-2xl pl-12 pr-6 py-3 w-fit">
+                    <a href="#"
+                        class="block py-2 px-4 bg-linear-to-r from-[#FF9447] to-[#FFD902] rounded-lg flex items-center">
+                        <span class="font-semibold">
+                            Découvrir les ateliers
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-[32px] inline-block" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div
+                    class=" flex sm:hidden h-full w-fit m-auto flex-col items-stretch justify-center gap-4 p-4 text-sm">
+                    <a href="#" class="block bg-[#FF9447] py-2 px-4 rounded-xl flex items-center">
+                        <span>
+                            Découvrir les ateliers
+                        </span>
+                    </a>
+                    <a href="#" class="py-2 px-4 bg-[#112772] rounded-xl flex items-center">
+                        <span>
+                            Inscrivez-vous
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+            <div
+                class="hidden absolute md:flex gap-4 text-2xl lg:text-4xl font-semibold bottom-0 w-1/2 justify-center right-0 py-8 ">
+                <div>
+                    +500 <br>clients
+                </div>
+                <div>
+                    100% <br>confiances
+                </div>
+            </div>
+
+            <div class="absolute size-full block -z-2 top-0 left-0">
+                <img src="assets/Bg.jpg" alt="Enfant souriant de profil" class="size-full block object-cover">
+            </div>
+            <div class="absolute top-0 left-0 -z-1 size-full bg-black/20">
+
+        </section>
+
+
+
+        <section class="relative py-24 px-2 sm:px-8 md:px-16 font-poppins">
+            <h1 class=" text-xl sm:text-2xl lg:text-3xl font-medium text-center">
+                <span
+                    class="bg-gradient-to-r from-[#FF9447] via-[#321D0E] to-[#000000] bg-clip-text text-transparent block">
+                    Fatigue oculaire, ISOLEMENT, Maux de Tête fréquent, baisse des performances scolaires... <br>
+                </span>
+                <span>Vous reconnaissez ces signaux ?</span>
+            </h1>
+
+            <div class="p-4"></div>
+
+            <article class="flex gap-4 md:gap-16 lg:gap-32 items-center">
+                <div class="flex flex-col grow">
+                    <p class="relative text-xs sm:text-sm md:text-base lg:text-lg font-medium text-black 
+                           ">
+                        Il est biologiquement <strong class="text-[#3A3DFF] font-medium">difficile</strong> pour un
+                        adolescent de s'arrêter seul. Pourquoi ? Parce que le cortex préfrontal
+                        <span class="text-gray-500 font-medium">(la zone du cerveau qui contrôle les impulsions
+                            et prend les décisions)</span>
+                        est le dernier à arriver à maturité, autour de 25 ans !
+                    </p>
+                    <div class=" p-2 sm:p-4"></div>
+                    <div class="w-2/5 h-[1px] bg-black"></div>
+
+                </div>
+                <div class="hidden shrink-0 sm:flex justify-center items-center">
+                    <img src="assets/image 349.png" alt="Enfants sur smartphones"
+                        class="rounded-full w-16 sm:w-48 md:w-56 lg:w-72  object-cover shadow-xl block">
+                </div>
+            </article>
+
+            <div class="p-4 sm:p-0"></div>
+            <!-- Ligne 2 -->
+            <article class="flex gap-4 md:gap-16 lg:gap-32 items-center">
+
+                <div class="hidden shrink-0 sm:flex justify-center items-center">
+                    <img src="assets/Union.png" alt="Enfants sur smartphones"
+                        class="rounded-full w-16 sm:w-48 md:w-56 lg:w-72 object-cover shadow-xl block">
+                </div>
+
+                <p class="relative text-xs sm:text-sm md:text-base lg:text-lg font-medium text-black grow
+                           ">
+                    L'écran est devenu la seule <span class="text-[#FF9447] font-medium">source de détente de votre
+                        enfant</span> ?
+                    <strong class="text-gray-500 font-medium">Lui demander d'éteindre sa tablette provoque de
+                        l'irritabilité, de la frustration ou des crises de colère ?</strong>
+                    <br>
+                    <strong class="font-medium">Son sommeil et sa motivation en souffrent ?</strong>
+                </p>
+
+
+
+            </article>
+
+        </section>
+        <section class="font-poppins px-6  ">
+            <div class="text-center px-6">
+                <h2
+                    class="text-3xl lg:text-4xl font-medium bg-gradient-to-r from-[#000000] to-[#3A3DFF] bg-clip-text text-transparent">
+                    Bonne nouvelle : le cerveau peut changer
+                </h2>
+                <div class="p-2"></div>
+                <p class="text-base sm:text-xl text-black font-medium">
+                    De la distraction au "Cerveau Actif"
+                </p>
+            </div>
+
+
+            <div
+                class="relative overflow-hidden bg-linear-to-r  from-black/80 to-black/80 sm:to-black/0 shadow-2xl group rounded-2xl overflow-hidden">
+                <div class="absolute top-0 left-0 size-full -z-10  -z-10">
+                    <img src="./assets/Rectangle 7.jpg" class="block size-full object-cover" alt="">
+                </div>
+                <div class="w-full sm:w-4/5 lg:w-3/5  flex flex-col justify-center p-8 sm:p-16 lg:p-20 text-white">
+                    <h3 class="text-4xl sm:text-5xl lg:text-6xl w-full border-l-4 px-2  border-orange-500 ">
+                        REPRENDRE LE CONTROLE
+                    </h3>
+                    <div class="p-12"></div>
+                    <p class="text-sm sm:text-base font-Regular font-Poppins mb-4 opacity-90">
+                        Le cerveau de nos enfants est d'une <span class="text-[#FF9447] font-medium">plasticité
+                            extraordinaire</span>: il se remodèle en permanence en fonction de son environnement. C’est
+                        grâce à la plasticité cérébrale : les connexions entre les neurones se créent, se renforcent ou
+                        disparaissent selon ce qu’on fait tous les jours. <br>
+                        <span class="block text-base md:text-xl font-medium text-white pt-8">
+                            Agissons aujourd'hui sur les écrans pour sauver les cerveaux de demain
+                        </span>
+                    </p>
+                    <a href="#"
+                        class="bg-[#FF9447] w-fit px-6 sm:px-12 py-2.5 rounded-2xl font-medium font-Poppins  ">Inscrivez-vous</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="py-24 bg-[#FAFAFF] w-full px-4 sm:px-8 md:px-16">
+
+
+
+            <div
+                class="flex justify-between font-poppins items-center border-l-8 pl-4 sm:pl-8 pt-8 pr-4 sm:pr-20 border-[#FF9447] pb-1">
+                <div>
+                    <h2 class="text-3xl sm:text-6xl font-light ">Temoignages</h2>
+                    <p class="text-base sm:text-lg mt-2 font-light font-Jost">
+                        <span class="text-[#3A3DFF] font-medium font-Jost">+500 clients</span> nous font confiance
+                    </p>
+                </div>
+                <img src="assets/Star 1.png" alt="Étoile de notation"
+                    class="h-[80px] w-auto hidden md:block object-contain drop-shadow-[0_0_0_#3A3DFF] brightness-0 saturate-100 invert-[23%] sepia-[86%] saturate-[5871%] hue-rotate-[234%] brightness-[96%] contrast-[103%]">
+            </div>
+
+            <ul class="grid gap-12 justify-content items-center">
+                <li
+                    class="flex flex-col md:flex-row gap-4 sm:gap-8 items-start p-4 sm:p-8 border-b-2 border-[#000000] hover:bg-orange-50 transition group">
+                    <img src="assets/Ellipse 5.png" alt="Portrait Marc"
+                        class="w-20 h-20 sm:w-32 sm:h-32 rounded-full object-cover shadow-lg group-hover:rotate-3 transition">
+                    <article class="flex-1">
+                        <h4 class="text-base sm:text-xl font-medium font-Poppins text-gray-800 mb-2">Monsieur le
+                            Directeur d'une École Partenaire</h4>
+                        <p class="text-sm sm:text-base text-gray-600 font-Regular font-Poppins leading-relaxed">"En
+                            tant qu'éducateur, je vois quotidiennement l'impact dévastateur de la surexposition aux
+                            écrans sur l'attention des élèves. L'approche de l'Institut Dé-Connecté apporte une
+                            réponse concrète et nécessaire. C'est une véritable vision d'avenir pour notre système
+                            éducatif :
+                            préparer les adultes de demain à être maîtres de la technologie plutôt que d'en être
+                            dépendants.
+                            C'est un partenaire indispensable pour la réussite de nos jeunes."
+                        </p>
+                    </article>
+                </li>
+                <li
+                    class="flex flex-col md:flex-row gap-4 sm:gap-8 items-start border-b-2 border-[#000000] p-4 sm:p-8 hover:bg-orange-50 transition group">
+                    <img src="assets/Ellipse 6.png" alt="Portrait Marc"
+                        class="w-20 h-20 sm:w-32 sm:h-32 rounded-full object-cover shadow-lg group-hover:rotate-3 transition">
+                    <article class="flex-1">
+                        <h4 class="text-base sm:text-xl font-medium font-Poppins text-gray-800 mb-2">Fitahiana, 14
+                            ans (Participant aux ateliers)</h4>
+                        <p class="text-sm sm:text-base text-gray-600 font-Regular font-Poppins leading-relaxed">
+                            "Avant, je me sentais souvent fatigué et sans motivation. Ce que j'ai préféré, ce sont
+                            les vidéos de motivation que l'on regarde et analyse. Aujourd'hui, après chaque
+                            projection, je me sens boosté et prêt à relever tous les défis.
+                            J'ai appris que mon cerveau est un outil puissant et c'est moi qui ai repris les
+                            commandes."
+                        </p>
+                    </article>
+                </li>
+                <li
+                    class="flex flex-col md:flex-row gap-4 sm:gap-8 items-start border-b-2 border-[#000000] p-4 sm:p-8 hover:bg-indigo-50 transition mb-32 group">
+                    <img src="assets/Ellipse 7.png" alt="Portrait Jean-Pierre"
+                        class="w-20 h-20 sm:w-32 sm:h-32 rounded-full object-cover shadow-lg group-hover:-rotate-3 transition">
+                    <article class="flex-1">
+                        <h4 class="text-base sm:text-xl font-medium font-Poppins text-gray-800 mb-2">Elena, maman de
+                            Diary (12 ans)</h4>
+                        <p class="text-sm sm:text-base text-gray-600 font-Regular font-Poppins leading-relaxed">"Le
+                            changement a été radical. Non seulement les résultats scolaires de Diary se sont
+                            améliorés grâce aux techniques de concentration apprises durant les ateliers, mais il a
+                            surtout retrouvé le goût des activités réelles. Alors qu'il passait tout son temps sur
+                            les jeux vidéo, il s'intéresse aujourd'hui passionnément à la guitare.
+                            Il a retrouvé une discipline et une joie de vivre que nous pensions perdues. C'est une
+                            renaissance pour lui."
+                        </p>
+                        <div id="navbar-placeholder"></div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+
+
+
+    </main>
+    
+</body>
+<section class="bg-[#112772] text-white grid md:grid-cols-2 p-8 gap-2">
+
+    <div>
+
+        <h1 class="text-2xl font-bold uppercase text-center md:text-start">
+            Commencer dès aujourd'hui !!
+        </h1>
+        <div class="p-3"></div>
+        <p class="md:text-lg opacity-90">
+            La réussite de nos enfants est un travail d'équipe.
+            Téléchargez gratuitement notre outil <strong class="text-orange-400 font-bold">"Charte Familiale :
+                Cerveau en pleine forme !"</strong>
+            et découvrez comment
+            mettre en place des rituels simples :
+        </p>
+
+
+        <ul class="space-y-2 pl-8 list-disc font-medium text-sm md:text-base">
+            <li>
+                Zones de paix (0 écran).
+            </li>
+            <li>
+
+                Couvre-feu numérique.
+            </li>
+            <li>
+
+                Défi des parents exemplaire.
+            </li>
+        </ul>
+
+        <div class="p-6"></div>
+        <div class="hidden md:flex items-center text-xl font-bold gap-12 text-white text-center ">
+            <aside class="flex flex-col ">
+                <strong class="sm:text-3xl lg:text-5xl">+500</strong>
+                <small>Clients</small>
+            </aside>
+            <aside class="flex flex-col">
+                <strong class="sm:text-3xl lg:text-5xl">100%</strong>
+                <small>Confiances</small>
+            </aside>
+        </div>
+    </div>
+
+    <form action="#" method="POST" class="px-3 sm:px-6 py-12">
+
+        <div class="grid grid-cols-1">
+            <label class="block  border-b border-white pb-2 focus-within:border-orange-400 transition-all">
+                <input type="text" name="parent_name" placeholder="Nom de parents ou responsable" required
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+            <div class="p-3"></div>
+            <label class="block  border-b border-white pb-1 focus-within:border-orange-400 transition-all">
+                <input type="email" name="email" placeholder="Adresse email" required
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+            <div class="p-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-1">
+            <label class="block border-b  border-white pb-1 focus-within:border-orange-400 transition-all">
+                <input type="tel" name="phone" placeholder="Numéro de téléphone"
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+            <div class="p-3"></div>
+            <label class="block border-b border-white pb-1 focus-within:border-orange-400 transition-all">
+                <input type="text" name="child_name" placeholder="Nom de l’enfant :"
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+            <div class="p-3"></div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+            <label class="block  border-b border-white pb-1 focus-within:border-orange-400 transition-all">
+                <input type="number" name="age" placeholder="Age de l’enfant"
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+
+            <label class="block  border-b border-white pb-1 focus-within:border-orange-400 transition-all">
+                <input type="text" name="class" placeholder="Classe"
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+
+        </div>
+        <div class="p-6"></div>
+
+        <div class="flex justify-center">
+
+            <button type="submit"
+                class="w-fit bg-gradient-to-r from-[#FF9447] to-[#D4AF37] text-white font-bold py-3 px-8 rounded-full text-sm shadow-md transition-all transform hover:-translate-y-0.5 active:translate-y-0 uppercase tracking-wide">
+                Inscrivez-vous
+            </button>
+        </div>
+
+    </form>
+
+</section>
+<footer class="w-full bg-white py-16 px-6 font-poppins border">
+    <div class="flex flex-col md:flex-row gap-4 md:gap-1 items-center md:items-start">
+
+        <div class="w-full flex flex-col items-center md:items-start md:w-[36%] shrink-0">
+            <h2 class="text-2xl font-bold">DE-CONNECTE</h2>
+
+            <div class="flex gap-8 items-center text-4xl py-2" aria-label="Liens vers nos réseaux sociaux">
+                <a href="https://facebook.com/ton-lien" target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-facebook "></i>
+
+                </a>
+
+                <a href="https://wa.me/ton-numero" target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-square-whatsapp "></i>
+
+                </a>
+
+                <a href="https://instagram.com/ton-lien" target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-square-instagram "></i>
+
+                </a>
+
+                <a href="https://linkedin.com/in/ton-lien" target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-linkedin  "></i>
+
+                </a>
+            </div>
+            <div class="p-1"></div>
+            <p class="text-black/80">
+                Ensemble, nous pouvons réveiller le Génie qui dort en chaque enfant. <br> <span
+                    class="text-[#3A3DFF] font-medium cursor-pointer">"Approche innovative de l'Institut
+                    Dé-connecté"</span>
+            </p>
+        </div>
+
+        <div class="p-8 w-full md:hidden">
+            <div class="w-full h-[1px] bg-black/30 " ></div>
+
+        </div>
+        <div class="shrink-0 px-16">
+            
+            <h3 class="font-bold text-[#1E1E1E] py-2">Liens utiles</h3>
+            <ul class="flex flex-col gap-3 font-Regular text-black">
+                <li><a href="#" class="hover:text-[#3A3DFF] transition">Accueil</a></li>
+                <li><a href="./a-propos/index.html" class="hover:text-[#3A3DFF] transition">A propos</a></li>
+                <li><a href="./ateliers/index.html" class="hover:text-[#3A3DFF] transition">Nos ateliers</a></li>
+                <li><a href="./contact/index.html" class="hover:text-[#3A3DFF] transition">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="p-8 w-full md:hidden">
+            <div class="w-full h-[1px] bg-black/30 " ></div>
+
+        </div>
+        <div class="grow ">
+            <h3 class="md:text-lg font-medium text-[#1E1E1E]">
+                Offrez à votre enfant les clés de sa réussite numérique. Réservez sa place pour la prochaine session et
+                retrouvez la sérénité à la maison.
+            </h3>
+            <div class="w-full p-4 ">
+                <div class="w-[72%] h-[1px] bg-black"></div>
+            </div>
+            <p class="text-xs text-[rgba(0,0,0,0.56)] font-medium">
+                Les places sont limitées pour garantir un suivi de qualité
+            </p>
+            <div class="p-2"></div>
+            <div class="flex justify-end">
+                <a href="#"
+                    class="bg-[#FF9447] text-white font-semibold py-3 px-8 rounded-2xl shadow-lg hover:shadow-xl hover:brightness-110 transition transform hover:-translate-y-1">
+                    Inscrivez-vous
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="pt-8">
+        <div class="flex items-center gap-2 text-black">
+            <i class="fa-solid fa-location-dot w-6 h-6 flex items-center justify-center" aria-hidden="true"></i>
+            <span class="font-light">Antananarivo - Madagascar</span>
+        </div>
+    </section>
+</footer>
+<script>
+        const header = document.querySelector("header");
+        const marker_header = document.querySelector("#marker_header");
+        const menu = header.querySelector('#mobile-menu').children;
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if ((entry.isIntersecting)) {
+                    header.classList.remove('text-black','bg-white','mt-2','border');
+                    header.classList.add('text-white','backdrop-blur-xs');
+                    
+                    for (element of menu) {
+
+                        element.classList.remove('bg-black');
+                        element.classList.add('bg-white');
+                    };
+                }
+                else {
+                    header.classList.remove('text-white','backdrop-blur-xs');
+                    header.classList.add('text-black','bg-white','mt-2','border');
+                    for (element of menu) {
+                        element.classList.remove('bg-white');
+                        element.classList.add('bg-black');
+
+                    }
+
+                }
+            });
+        }, { threshold: 0 });
+        observer.observe(marker_header);
+    </script>
+</html>

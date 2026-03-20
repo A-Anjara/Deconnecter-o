@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deconnecter-o</title>
+
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" defer></script>
+
+    <!-- INTER & ROBOTO & POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="box-border ">
+
+
+    <header
+        class="w-full text-sm flex-wrap justify-between flex items-center fixed top-0 z-50 py-2 px-2 lg:px-6 border-gray-800 text-black bg-white mt-2 border">
+        <div class="order-1">
+            <a href="/" class="block flex items-center gap-1 font-black font-inter ">
+                <div>
+                    <img src="../assets/Logo.png" class="w-10" alt="">
+                </div>
+                <div class="flex-col flex sm:hidden md:flex">
+                    <span class="font-bold text-lg">Dé-connecté</span>
+                    <span class="text-xs font-light">Réveille le génie en toi</span>
+                </div>
+            </a>
+        </div>
+        <nav class="w-fit sm:grow order-3 sm:order-2 group has-checked:w-full sm:has-checked:w-fit has-checked:p-3"
+            aria-label="Menu principal">
+            <label class="block sm:hidden  rounded-full w-full ">
+                <input type="checkbox" class="hidden">
+                <div class="flex flex-col gap-1 size-[40px] p-2 border rounded-full justify-center group-has-checked:hidden"
+                    id="mobile-menu">
+                    <div class="bg-black w-full h-[2px]"></div>
+                    <div class="bg-black w-full h-[2px]"></div>
+                    <div class="bg-black w-full h-[2px]"></div>
+                </div>
+                <div class="text-xl hidden group-has-checked:block text-end border-t-1 border-t-black">
+                    x
+                </div>
+            </label>
+
+
+
+            <ul
+                class=" p-2 hidden group-has-checked:flex flex-col sm:flex-row sm:flex items-center gap-4 lg:gap-8 justify-center ">
+                <li><a href="../index.html" class="hover:text-[#FF9447] transition-colors">Accueil</a>
+                </li>
+                <li><a href="../a-propos/index.html" class="text-[#FF9447] underline underline-offset-8">A propos</a></li>
+                <li><a href="../ateliers/index.html" class="hover:text-[#FF9447] transition-colors">Nos ateliers</a></li>
+                <li><a href="../contact/index.html" class="hover:text-[#FF9447] transition-colors">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="order-2 sm:order-3">
+            <a href="#inscription"
+                class="hidden sm:block bg-[#112772] text-white font-medium py-2 px-3 sm:px-6 lg:px-12 rounded-full shadow-md hover:shadow-lg hover:brightness-110 transition-all transform active:scale-95">
+                Inscrivez-vous
+            </a>
+        </div>
+    </header>
+
+
+    <section class="flex flex-col items-center text-center rounded-xl relative pt-12 p-1">
+        <!-- bg-linear-to-b from-white from-[60%] to-[rgba(137,178,255,0.8)] to-[100%] pb-36 -->
+        <div class="flex block w-full justify-center items-center gap-1">
+            <div class="block bg-[#FF9447] size-[16px] rounded-full"></div>
+            <span class="block text-[rgba(0,0,0,0.42)] text-[10px] sm:text-xs font-poppins">+500 clients qui nous fait
+                confiances</span>
+        </div>
+        <h1 class="block text-3xl sm:text-4xl lg:text-5xl font-inter font-medium pt-12 text-[#14141E]">
+            NOTRE MISSION
+        </h1>
+        <h2
+            class="relative block text-sm md:text-base lg:text-xl font-poppins text-[rgba(0,0,0,0.42)] font-semibold py-2">
+            Réveiller le potentiel des enfants dans un monde dominé
+            <em class="text-[#FF9447]">par les écrans</em>
+            <div class="absolute hidden sm:block size-[80px] sm:size-[120px] left-0 -translate-x-1/2 bottom-full">
+                <img class="block size-full" src="images/Rectangle 711.png" alt="" />
+            </div>
+            <div class="absolute hidden sm:block size-[90px] sm:size-[132px] right-0 translate-x-1/2 top-full">
+                <img class="block size-full" src="images/Rectangle 710.png" alt="" />
+            </div>
+        </h2>
+        <p class="block w-[80%] sm:w-[40%] lg:w-[30%] font-inter text-xs sm:text-sm pt-2">
+            Nous aidons les enfants et les adolescents à retrouver leur
+            concentration, leur équilibre et leur capacité à s’épanouir… dans la
+            vraie vie.
+        </p>
+        <div
+            class="rounded-xl block w-full bg-linear-to-b from-white to-[rgba(137,178,255,1)] h-[160px] flex justify-center items-end pb-5">
+            <i class="block bx bx-mouse text-white text-4xl"></i>
+        </div>
+    </section>
+
+    <section>
+        <h1
+            class="block text-center text-2xl sm:text-3xl lg:text-4xl font-roboto font-medium py-12 text[rgb(24,25,27)]">
+            NOTRE
+            <em
+                class="text-[rgba(24,25,27,0.9)] bg-[rgba(255,148,71,0.40)] pl-1 pr-8 border-r-3 border-r-[rgb(255,148,71)]">HISTOIRE
+            </em>
+        </h1>
+
+        <div
+            class="relative flex justify-center items-start py-16 px-8 md:px-16 lg:px-24 font-poppins gap-4 md:gap-6 bg-[#090A18] text-white">
+            <div class="grow">
+                <h2 class="relative block text-xl sm:text-3xl lg:text-4xl  ">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-clip-text text-transparent bg-linear-to-r from-white to-[#0A7CFF]">
+                            Le drame de Léo et
+                        </span>
+                        <svg class="size-10 text-black" viewBox="0 0 85 98" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M42.4355 0L51.7937 32.7912L84.8708 24.5L61.1519 49L84.8708 73.5L51.7937 65.2088L42.4355 98L33.0774 65.2088L0.000301361 73.5L23.7192 49L0.000301361 24.5L33.0774 32.7912L42.4355 0Z"
+                                fill="url(#paint0_linear_925_514)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_925_514" x1="42.4355" y1="0" x2="42.4355" y2="98"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF9447" />
+                                    <stop offset="1" stop-color="#D4AF37" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div
+                        class="block w-fit pl-4 sm:pl-8 bg-clip-text text-transparent bg-linear-to-r from-white to-[#0A7CFF]">
+                        <div class="flex items-center gap-2">
+                            <svg class="size-5" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_925_506)">
+                                    <path
+                                        d="M17.5 8.5767L14.0216 0L14.0816 9.25813L7.59253 2.66699L11.1909 11.185L2.66278 7.58979L9.25978 14.0869L0 14.0164L8.57608 17.4942L0 20.9835L9.25978 20.9131L2.66278 27.4102L11.1909 23.8033L7.59253 32.3329L14.0816 25.7418L14.0216 34.9999L17.5 26.4233L20.9784 34.9999L20.9184 25.7418L27.4075 32.3329L23.8091 23.8033L32.3373 27.4102L25.7403 20.9131L35 20.9835L26.4239 17.4942L35 14.0164L25.7403 14.0869L32.3373 7.58979L23.8091 11.185L27.4075 2.66699L20.9184 9.25813L20.9784 0L17.5 8.5767Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_925_506">
+                                        <rect width="35" height="35" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span>
+
+                                l’éveil d’une mission
+                            </span>
+                        </div>
+                    </div>
+                </h2>
+                <p class=" py-8 text-xs sm:text-sm leading-8 text-balance font-light">
+                    Léo, 11 ans, s'est emmuré dans sa chambre, délaissant ses proches pour le reflet bleuté d'une
+                    tablette. Ce retrait n'était pas une simple crise d'adolescence, mais le début d'<strong
+                        class="font-medium">un véritable
+                        piratage neurologique</strong>. Derrière sa porte close, son cerveau en plein développement
+                    subissait une
+                    altération profonde, capturé par des algorithmes prédateurs. À l'insu de tous, <strong
+                        class="font-medium">il s'était laissé
+                        hypnotiser par une série en ligne macabre</strong>, conçue comme un piège psychologique. Épisode
+                    après
+                    épisode, cette chaîne toxique a manipulé ses émotions les plus fragiles, transformant ses doutes
+                    d'enfant en une détresse insurmontable. Le virtuel a fini par dicter sa loi au réel.
+                </p>
+                <button class="bg-[#12396F] text-white px-12 py-2 rounded-full text-sm">Voir Plus</button>
+            </div>
+
+            <div
+                class="absolute top-0 right-0 sm:static block w-[15%] p-4 lg:p-8 flex justify-evenly items-center gap-2 shrink-0">
+                <svg class="block w-full" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_959_216)">
+                        <g opacity="0.4">
+                            <path d="M159.074 128.057V1.0752L32.0922 1.0752L32.0922 128.057H159.074Z" stroke="white" />
+                            <path d="M128.057 159.076V32.0938L1.07464 32.0938L1.07464 159.076H128.057Z"
+                                stroke="white" />
+                            <path d="M32.0927 0.923828L32.0926 128.057L1.07422 158.591V31.6091L32.0927 0.923828Z"
+                                stroke="white" stroke-linejoin="bevel" />
+                            <path d="M159.075 0.923828V128.057L128.057 159.075V31.6091L159.075 0.923828Z" stroke="white"
+                                stroke-linejoin="bevel" />
+                        </g>
+                    </g>
+                </svg>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-3 sm:py-12 lg:py-12 font-poppins">
+        <h1
+            class="block text-center text-3xl sm:text-4xl lg:text-5xl text-transparent font-medium bg-linear-to-r from-black to-[#FF9447] bg-clip-text">
+            Nos Valeurs<br />Fondamentales
+        </h1>
+
+        <div class="flex justify-evenly py-12 font-inter flex-wrap gap-y-2">
+            <div class="w-[96%] sm:w-[48%] lg:w-[32%] rounded-xl bg-[#F0F0F0] p-8">
+                <div class="pb-5 sm:pb-20">
+                    <div class="p-2 text-2xl bg-[#5846FB] rounded-full w-fit text-white">
+                        <i class="block align-middle bx bx-handshake"></i>
+                    </div>
+                </div>
+                <h2 class="py-4 text-2xl sm:text-3xl lg:text-4xl">
+                    La Bienveillance
+                </h2>
+                <p class="color-[rgba(0,0,0,0.7)]">
+                    Nous ne jugeons ni les parents, ni les enfants. Nous accompagnons
+                    chaque famille avec empathie vers un nouvel équilibre.
+                </p>
+            </div>
+
+            <div class="w-[96%] sm:w-[48%] lg:w-[32%] rounded-xl bg-[#F0F0F0] p-8">
+                <div class="pb-5 sm:pb-20">
+                    <div class="p-2 text-2xl bg-[#5846FB] rounded-full w-fit text-white">
+                        <i class="block align-middle bx bx-thunder"></i>
+                    </div>
+                </div>
+                <h2 class="py-4 text-2xl sm:text-3xl lg:text-4xl">
+                    La Rigueur Scientifique
+                </h2>
+                <p class="color-[rgba(0,0,0,0.7)]">
+                    Tous nos ateliers s'appuient sur les dernières découvertes en
+                    neurosciences (plasticité cérébrale, système de récompense,
+                    neuro-protection).
+                </p>
+            </div>
+
+            <div class="w-[96%] sm:w-[48%] lg:w-[32%] rounded-xl bg-[#F0F0F0] p-8">
+                <div class="pb-5 sm:pb-20">
+                    <div class="p-2 text-2xl bg-[#5846FB] rounded-full w-fit text-white">
+                        <i class="block align-middle bx bx-seal-check"></i>
+                    </div>
+                </div>
+                <h2 class="py-4 text-2xl sm:text-3xl lg:text-4xl">Épanouissement</h2>
+                <p class="color-[rgba(0,0,0,0.7)]">
+                    Notre but ultime n'est pas seulement de réduire le temps d'écran,
+                    mais de réveiller la créativité, la confiance et le génie qui
+                    sommeillent en chaque jeune.
+                </p>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-8 w-[16%]">
+            <svg class="size-full" viewBox="0 0 409 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.4">
+                    <path d="M374 66.3008H0" stroke="black" />
+                    <path d="M66.1504 0V132.3" stroke="black" />
+                    <path d="M112.913 112.915L19.3672 19.3691" stroke="black" />
+                    <path d="M112.913 19.3691L19.3672 112.915" stroke="black" />
+                </g>
+            </svg>
+
+        </div>
+    </section>
+
+    <section class="p-6 sm:p-12 lg:p-24">
+        <h1 class="block text-3xl sm:text-4xl lg:text-5xl font-poppins text-black text-center ">
+            NOS FO<span class="bg-[#D7EEDD] rounded-full px-1">NDATEURS</span>
+        </h1>
+
+
+        <div class="py-8"></div>
+
+        <h2
+            class="text-xl p-3  sm:text-2xl lg:text-3xl border-l-4 border-l-[rgb(255,148,71)] font-semibold font-poppins">
+            Une expertise médicale au<br>
+            service de l'éducation
+        </h2>
+
+
+
+        <div class="flex gap-2 py-8 text-white text-sm md:text-base">
+
+
+            <div class=" relative grow rounded-xl overflow-hidden font-poppins">
+                <img class="w-full h-full object-cover rounded-xl" src="./images/Rectangle 21.png">
+                <div
+                    class="absolute bottom-0 left-0 w-full bg-[rgba(0,0,0,0.89)] p-4 md:p-8 overflow-scroll h-[60%] min-h-[60%] max-h-[60%] md:h-[45%] md:min-h-[45%] md:max-h-[45%]">
+                    <p>
+                        Co-fondatrice et directrice:
+                    </p>
+                    <p class="text-[#CE603B] text-base md:text-xl lg:text-2xl">
+                        Dr RABESOA Joëlle
+                    </p>
+                    <div class="p-4"></div>
+                    <p>
+                        Médecin specialiste en santé publique , expériences plus de 20 ans ,
+
+                        certifiée en Santé mentale et bien-être psychosocial des adolescents,
+
+                        Facilitatrice certifiée de Brighter Minds
+                    </p>
+                </div>
+            </div>
+            <div class=" relative grow ">
+                <img class="w-full h-full object-cover rounded-xl" src="./images/Rectangle 711(1).png">
+                <div
+                    class="absolute bottom-0 left-0 w-full bg-[rgba(0,0,0,0.89)] p-4 md:p-8 overflow-scroll h-[60%] min-h-[60%] max-h-[60%] md:h-[45%] md:min-h-[45%] md:max-h-[45%]">
+                    <p>
+                        Co-fondateur:
+                    </p>
+                    <p class="text-[#CE603B] text-base md:text-xl lg:text-2xl">
+                        Dr MILARIMANANA Harotoky
+                    </p>
+                    <div class="p-4"></div>
+                    <p>
+                        Directeur de cours
+
+                        Médecin specialiste en santé publique , expériences plus de 20 ans ,
+
+                        Formateur - renforcement de capacité
+
+                        Formateur de Heartfulness
+
+                        Facilitateur certifié de Brighter Minds
+
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <section class="p-6 sm:p-12 lg:p-24">
+        <h1 class="block text-3xl sm:text-4xl lg:text-5xl font-poppins text-black ">
+            L'expérience<span class="bg-[#D7EEDD] rounded-full px-2"> Dé-</span>Connecté <br>
+            <span class="relative">
+                en imag<svg class="block absolute w-fill -bottom-1 -left-3" viewBox="0 0 372 33" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M45.0342 1.5H336.4L0.0644531 15.9H371.064L183.066 31.5" stroke="#FFC250"
+                        stroke-width="3" />
+                </svg></span>es
+        </h1>
+
+
+        <div class="flex gap-2 py-8">
+
+
+            <div class="grow">
+                <img class="w-full h-full object-cover rounded-xl" src="./images/Rectangle 720.png">
+            </div>
+
+
+            <div class="flex sm:flex-col gap-2 w-[60%] sm:w-[50%] shrink-0">
+
+                <div class="flex flex-col sm:flex-row grow gap-2">
+                    <div class="grow">
+                        <img src="./images/WhatsApp Image 2026-03-07 at 07.58.35 1.jpg"
+                            class="w-full h-full object-cover rounded-xl" />
+                    </div>
+                    <div class="grow">
+                        <img src="./images/Rectangle 722.png" class="w-full h-full object-cover rounded-xl" />
+                    </div>
+                </div>
+
+                <div class="w-[50%] sm:w-full shrink-0">
+                    <img src="./images/Rectangle 723.png" class="w-full h-full object-cover rounded-xl" />
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div class="flex justify-center px-3 sm:px-12 lg:px-24 pb-24">
+        <p class="text-[rgba(0,0,0,0.6)] text-sm md:text-base lg:text-xl font-poppins text-center">
+            <strong class="font-bold text-black">
+                <em class="text-[#FF9447]"> L'Institut Dé-Connecté</em>
+                n'est pas qu'un centre de formation
+            </strong>
+            , c'est une communauté de parents et d'éducateurs conscients des enjeux
+            de demain. En travaillant sur la concentration, la gestion des émotions
+            et la mémoire,
+            <strong class="font-bold text-black">
+                nous préparons vos enfants à devenir des adultes libres, capables de
+                maîtriser la technologie
+                <span
+                    class="text-nowrap bg-[rgba(255,148,71,0.40)] pl-1 pr-8 border-r-3 border-r-[rgb(255,148,71)]">sans&nbsp;en&nbsp;être&nbsp;les&nbsp;esclaves.</span>
+            </strong>
+        </p>
+    </div>
+
+
+
+
+
+    <!-- FOOTER -->
+
+
+
+    <!-- <section class="w-full bg-[#112772] py-8 px-6 text-white flex items-center"> -->
+
+
+
+
+
+</body>
+<section class="bg-[#112772] text-white grid md:grid-cols-2 p-8 gap-2">
+
+    <div>
+
+        <h1 class="text-2xl font-bold uppercase text-center md:text-start">
+            Commencer dès aujourd'hui !!
+        </h1>
+        <div class="p-3"></div>
+        <p class="md:text-lg opacity-90">
+            La réussite de nos enfants est un travail d'équipe.
+            Téléchargez gratuitement notre outil <strong class="text-orange-400 font-bold">"Charte Familiale :
+                Cerveau en pleine forme !"</strong>
+            et découvrez comment
+            mettre en place des rituels simples :
+        </p>
+
+
+        <ul class="space-y-2 pl-8 list-disc font-medium text-sm md:text-base">
+            <li>
+                Zones de paix (0 écran).
+            </li>
+            <li>
+
+                Couvre-feu numérique.
+            </li>
+            <li>
+
+                Défi des parents exemplaire.
+            </li>
+        </ul>
+
+        <div class="p-6"></div>
+        <div class="hidden md:flex items-center text-xl font-bold gap-12 text-white text-center ">
+            <aside class="flex flex-col ">
+                <strong class="sm:text-3xl lg:text-5xl">+500</strong>
+                <small>Clients</small>
+            </aside>
+            <aside class="flex flex-col">
+                <strong class="sm:text-3xl lg:text-5xl">100%</strong>
+                <small>Confiances</small>
+            </aside>
+        </div>
+    </div>
+
+    <form action="#" method="POST" class="px-3 sm:px-6 py-12">
+
+        <div class="grid grid-cols-1">
+            <label class="block  border-b border-white pb-2 focus-within:border-orange-400 transition-all">
+                <input type="text" name="parent_name" placeholder="Nom de parents ou responsable" required
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+            <div class="p-3"></div>
+            <label class="block  border-b border-white pb-1 focus-within:border-orange-400 transition-all">
+                <input type="email" name="email" placeholder="Adresse email" required
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+            <div class="p-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-1">
+            <label class="block border-b  border-white pb-1 focus-within:border-orange-400 transition-all">
+                <input type="tel" name="phone" placeholder="Numéro de téléphone"
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+            <div class="p-3"></div>
+            <label class="block border-b border-white pb-1 focus-within:border-orange-400 transition-all">
+                <input type="text" name="child_name" placeholder="Nom de l’enfant :"
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+            <div class="p-3"></div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+            <label class="block  border-b border-white pb-1 focus-within:border-orange-400 transition-all">
+                <input type="number" name="age" placeholder="Age de l’enfant"
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+
+            <label class="block  border-b border-white pb-1 focus-within:border-orange-400 transition-all">
+                <input type="text" name="class" placeholder="Classe"
+                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
+            </label>
+
+        </div>
+        <div class="p-6"></div>
+
+        <div class="flex justify-center">
+
+            <button type="submit"
+                class="w-fit bg-gradient-to-r from-[#FF9447] to-[#D4AF37] text-white font-bold py-3 px-8 rounded-full text-sm shadow-md transition-all transform hover:-translate-y-0.5 active:translate-y-0 uppercase tracking-wide">
+                Inscrivez-vous
+            </button>
+        </div>
+
+    </form>
+
+</section>
+<footer class="w-full bg-white py-16 px-6 font-poppins border">
+    <div class="flex flex-col md:flex-row gap-4 md:gap-1 items-center md:items-start">
+
+        <div class="w-full flex flex-col items-center md:items-start md:w-[36%] shrink-0">
+            <h2 class="text-2xl font-bold">DE-CONNECTE</h2>
+
+            <div class="flex gap-8 items-center text-4xl py-2" aria-label="Liens vers nos réseaux sociaux">
+                <a href="https://facebook.com/ton-lien" target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-facebook "></i>
+
+                </a>
+
+                <a href="https://wa.me/ton-numero" target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-square-whatsapp "></i>
+
+                </a>
+
+                <a href="https://instagram.com/ton-lien" target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-square-instagram "></i>
+
+                </a>
+
+                <a href="https://linkedin.com/in/ton-lien" target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <i class="fa-brands fa-linkedin  "></i>
+
+                </a>
+            </div>
+            <div class="p-1"></div>
+            <p class="text-black/80">
+                Ensemble, nous pouvons réveiller le Génie qui dort en chaque enfant. <br> <span
+                    class="text-[#3A3DFF] font-medium cursor-pointer">"Approche innovative de l'Institut
+                    Dé-connecté"</span>
+            </p>
+        </div>
+
+        <div class="p-8 w-full md:hidden">
+            <div class="w-full h-[1px] bg-black/30 " ></div>
+
+        </div>
+        <div class="shrink-0 px-16">
+            
+            <h3 class="font-bold text-[#1E1E1E] py-2">Liens utiles</h3>
+            <ul class="flex flex-col gap-3 font-Regular text-black">
+                <li><a href="../index.html" class="hover:text-[#3A3DFF] transition">Accueil</a></li>
+                <li><a href="../a-propos/index.html" class="hover:text-[#3A3DFF] transition">A propos</a></li>
+                <li><a href="../ateliers/index.html" class="hover:text-[#3A3DFF] transition">Nos ateliers</a></li>
+                <li><a href="../contact/index.html" class="hover:text-[#3A3DFF] transition">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="p-8 w-full md:hidden">
+            <div class="w-full h-[1px] bg-black/30 " ></div>
+
+        </div>
+        <div class="grow ">
+            <h3 class="md:text-lg font-medium text-[#1E1E1E]">
+                Offrez à votre enfant les clés de sa réussite numérique. Réservez sa place pour la prochaine session et
+                retrouvez la sérénité à la maison.
+            </h3>
+            <div class="w-full p-4 ">
+                <div class="w-[72%] h-[1px] bg-black"></div>
+            </div>
+            <p class="text-xs text-[rgba(0,0,0,0.56)] font-medium">
+                Les places sont limitées pour garantir un suivi de qualité
+            </p>
+            <div class="p-2"></div>
+            <div class="flex justify-end">
+                <a href="#"
+                    class="bg-[#FF9447] text-white font-semibold py-3 px-8 rounded-2xl shadow-lg hover:shadow-xl hover:brightness-110 transition transform hover:-translate-y-1">
+                    Inscrivez-vous
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="pt-8">
+        <div class="flex items-center gap-2 text-black">
+            <i class="fa-solid fa-location-dot w-6 h-6 flex items-center justify-center" aria-hidden="true"></i>
+            <span class="font-light">Antananarivo - Madagascar</span>
+        </div>
+    </section>
+</footer>
+
+</html>
