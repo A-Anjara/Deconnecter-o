@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libérez le potentiel de votre enfant | De-Connecte</title>
-    <meta name="description" content="Ateliers basés sur les neurosciences pour réduire le temps d'écran.">
+    <title>Ateliers enfants écrans | Concentration & neurosciences | Institut Dé-Connecté</title>
+    <meta name="description"
+        content="Votre enfant passe trop de temps sur les écrans ? Découvrez nos ateliers basés sur les neurosciences pour améliorer sa concentration, son sommeil et sa motivation.">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" defer></script>
@@ -29,6 +30,55 @@
             font-family: "Roboto", sans-serif;
         }
     </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Institut Dé-Connecté",
+  "description": "Programme d'accompagnement pour enfants et adolescents visant à réduire la dépendance aux écrans, améliorer la concentration et développer le potentiel grâce aux neurosciences.",
+  "url": "https://www.tonsite.com",
+  "logo": "https://www.tonsite.com/logo.png",
+  "image": "https://www.tonsite.com/assets/Bg.jpg",
+  "telephone": "+261XXXXXXXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Antananarivo",
+    "addressRegion": "Analamanga",
+    "addressCountry": "MG"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Madagascar"
+  },
+  "sameAs": [
+    "https://www.facebook.com/tonpage",
+    "https://www.instagram.com/tonpage"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Institut Dé-Connecté",
+  "image": "https://www.tonsite.com/assets/Bg.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Antananarivo",
+    "addressCountry": "MG"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-18.8792",
+    "longitude": "47.5079"
+  },
+  "url": "https://www.tonsite.com",
+  "telephone": "+261XXXXXXXXX"
+}
+</script>
+
+
 </head>
 <style>
 
@@ -92,14 +142,17 @@
         <section
             class="relative flex flex-col items-center sm:items-start overflow-hidden h-[100vh] max-h-[100vh] font-poppins text-white ">
             <div class="absolute top-0 left-0 h-full p-1" id="marker_header"></div>
-            <h1 class="text-4xl md:text-5xl lg:text-7xl pt-18 lg:pt-24 sm:pl-8 w-9/10 sm:w-7/11">
-                Libérez le vrai potentiel de votre enfant
-            </h1>
-            <p class="text-sm md:text-base lg:text-lg w-9/10 sm:w-3/5 sm:pl-8">
-                Aidez votre enfant (de 5 à 15 ans) à maîtriser son temps d'écran, à retrouver sa concentration
-                et à libérer son plein potentiel grâce à une approche basée sur les neurosciences.
-            </p>
-            <div class="grow flex flex-col-reverse w-full">
+            <div class="flex flex-col grow justify-center sm:justify-center">
+
+                <h1 class="text-4xl md:text-5xl lg:text-7xl sm:pl-8 w-9/10 sm:w-7/11">
+                    Libérez le vrai potentiel de votre enfant
+                </h1>
+                <p class="text-sm md:text-base lg:text-lg w-9/10 sm:w-3/5 sm:pl-8">
+                    Aidez votre enfant (de 5 à 15 ans) à maîtriser son temps d'écran, à retrouver sa concentration
+                    et à libérer son plein potentiel grâce à une approche basée sur les neurosciences.
+                </p>
+            </div>
+            <div class="shirnk-0 flex flex-col-reverse w-full">
                 <div class="hidden sm:block bg-white rounded-tr-2xl pl-12 pr-6 py-3 w-fit">
                     <a href="#"
                         class="block py-2 px-4 bg-linear-to-r from-[#FF9447] to-[#FFD902] rounded-lg flex items-center">
@@ -316,7 +369,7 @@
 
 
     </main>
-    
+
 </body>
 <section class="bg-[#112772] text-white grid md:grid-cols-2 p-8 gap-2">
 
@@ -455,11 +508,11 @@
         </div>
 
         <div class="p-8 w-full md:hidden">
-            <div class="w-full h-[1px] bg-black/30 " ></div>
+            <div class="w-full h-[1px] bg-black/30 "></div>
 
         </div>
         <div class="shrink-0 px-16">
-            
+
             <h3 class="font-bold text-[#1E1E1E] py-2">Liens utiles</h3>
             <ul class="flex flex-col gap-3 font-Regular text-black">
                 <li><a href="#" class="hover:text-[#3A3DFF] transition">Accueil</a></li>
@@ -470,7 +523,7 @@
         </div>
 
         <div class="p-8 w-full md:hidden">
-            <div class="w-full h-[1px] bg-black/30 " ></div>
+            <div class="w-full h-[1px] bg-black/30 "></div>
 
         </div>
         <div class="grow ">
@@ -502,33 +555,34 @@
     </section>
 </footer>
 <script>
-        const header = document.querySelector("header");
-        const marker_header = document.querySelector("#marker_header");
-        const menu = header.querySelector('#mobile-menu').children;
-        let observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if ((entry.isIntersecting)) {
-                    header.classList.remove('text-black','bg-white','mt-2','border');
-                    header.classList.add('text-white','backdrop-blur-xs');
-                    
-                    for (element of menu) {
+    const header = document.querySelector("header");
+    const marker_header = document.querySelector("#marker_header");
+    const menu = header.querySelector('#mobile-menu').children;
+    let observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if ((entry.isIntersecting)) {
+                header.classList.remove('text-black', 'bg-white', 'mt-2', 'border');
+                header.classList.add('text-white', 'backdrop-blur-xs');
 
-                        element.classList.remove('bg-black');
-                        element.classList.add('bg-white');
-                    };
-                }
-                else {
-                    header.classList.remove('text-white','backdrop-blur-xs');
-                    header.classList.add('text-black','bg-white','mt-2','border');
-                    for (element of menu) {
-                        element.classList.remove('bg-white');
-                        element.classList.add('bg-black');
+                for (element of menu) {
 
-                    }
+                    element.classList.remove('bg-black');
+                    element.classList.add('bg-white');
+                };
+            }
+            else {
+                header.classList.remove('text-white', 'backdrop-blur-xs');
+                header.classList.add('text-black', 'bg-white', 'mt-2', 'border');
+                for (element of menu) {
+                    element.classList.remove('bg-white');
+                    element.classList.add('bg-black');
 
                 }
-            });
-        }, { threshold: 0 });
-        observer.observe(marker_header);
-    </script>
+
+            }
+        });
+    }, { threshold: 0 });
+    observer.observe(marker_header);
+</script>
+
 </html>
