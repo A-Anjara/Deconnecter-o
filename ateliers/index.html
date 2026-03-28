@@ -4,33 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atelier enfant écran | Améliorer concentration & réduire dépendance | Institut Dé-Connecté</title>
-    <meta name="description" content="Programme en 5 séances pour aider votre enfant à réduire les écrans, améliorer sa concentration et retrouver motivation et confiance. Inscription ouverte.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" defer></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+    <title>Nos Ateliers</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        .font-inter {
-            font-family: "Inter", sans-serif;
-        }
-
-        .font-poppins {
-            font-family: "Poppins", sans-serif;
-        }
-
-        .font-roboto {
-            font-family: "Roboto", sans-serif;
-        }
-    </style>
-
-
-<script type="application/ld+json">
+    <link rel="stylesheet" href="atelier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
@@ -57,7 +40,7 @@
 }
 </script>
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -97,7 +80,7 @@
   ]
 }
 </script>
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -117,21 +100,20 @@
   "telephone": "+261XXXXXXXXX"
 }
 </script>
+    <script src="../header.js" defer></script>
 </head>
-<style>
 
-</style>
-</head>
+
 
 <body>
     <header
-        class="w-full text-sm flex-wrap justify-between flex items-center fixed top-0 z-50 py-2 px-2 lg:px-6 border-gray-800 text-black bg-white mt-2 border">
+        class="w-full text-sm flex-wrap justify-between flex items-center fixed top-0 z-100 py-2 px-2 lg:px-6 border-black/28 border-b-1 bg-white text-black  border transition-all  duration-600">
         <div class="order-1">
             <a href="/" class="block flex items-center gap-1 font-black font-inter ">
                 <div>
                     <img src="../assets/Logo.png" class="w-10" alt="">
                 </div>
-                <div class="flex-col flex sm:hidden md:flex">
+                <div class="flex-col flex" id="logo_text">
                     <span class="font-bold text-lg">Dé-connecté</span>
                     <span class="text-xs font-light">Réveille le génie en toi</span>
                 </div>
@@ -156,12 +138,13 @@
 
             <ul
                 class=" p-2 hidden group-has-checked:flex flex-col sm:flex-row sm:flex items-center gap-4 lg:gap-8 justify-center ">
-                <li><a href="../index.html" class="hover:text-[#FF9447] transition-colors">Accueil</a>
+                <li><a href="../index.html" class="hover:text-[#FF9447] transition-colors ">Accueil</a>
                 </li>
-                <li><a href="../a-propos/index.html" class="hover:text-[#FF9447] ">A propos</a>
+                <li><a href="../a-propos/index.html" class="hover:text-[#FF9447] transition-colors ">A propos</a></li>
+                <li><a href="../ateliers/index.html"
+                        class="text-[#FF9447] underline underline-offset-8 transition-colors">Nos ateliers</a>
                 </li>
-                <li><a href="../ateliers/index.html" class="text-[#FF9447] transition-colors underline underline-offset-8">Nos ateliers</a>
-                </li>
+                <li><a href="../a-propos/index.html#blog" class="hover:text-[#FF9447] transition-colors">Blog</a></li>
                 <li><a href="../contact/index.html" class="hover:text-[#FF9447] transition-colors">Contact</a></li>
             </ul>
 
@@ -175,14 +158,16 @@
         </div>
     </header>
 
-    <main class="w-full">
-        <section class="relative px-2 sm:px-8 lg:px-12 py-16">
-            <div class="p-8"></div>
-            <h1 class="text-5xl sm:text-6xl md:text-7xl font-light  font-poppins relative">
+
+    <main class="w-full ">
+
+        <section class="relative  px-2 sm:px-4 md:px-8 lg:px-16 pt-24" id="section_hero">
+            <!-- <div class="p-8"></div> -->
+            <h1 class=" font-[Jost] relative md:text-[75px] sm:text-[68px] text-[32px] min-[440px]:text-[48px] ">
                 UN BAGAGE POUR
                 <div class="absolute top-full md:top-0 right-0">
                     <img src="assets/Star.png" alt="étoile violette"
-                        class="w-16 md:w-12  -translate-x-1/2 md:translate-none">
+                        class="w-10 md:w-12  -translate-x-1/2 md:translate-none">
                 </div>
             </h1>
 
@@ -190,11 +175,11 @@
 
             <div class=" relative flex flex-col md:flex-row justify-between gap-8">
                 <div
-                    class="text-5xl sm:text-6xl md:text-7xl text-6xl md:text-7xl font-light w-6/9 md:w-5/9 lg:w-1/3 h-fit py-2 text-white bg-[#0045FF]">
+                    class="font-[Jost] relative text-[75px] max-md:text-[48px] max-sm:text-[36px] w-6/9 md:w-6/9 lg:w-1/3 h-fit py-2 text-white bg-[#0B2876]">
                     LA VIE
                 </div>
 
-                <div class="flex flex-col w-full md:w-4/9 lg:w-1/3 text-base md:text-sm lg:text-base">
+                <div class="flex flex-col w-full w-full md:w-4/9 lg:w-1/3 text-sm sm:text-base md:text-sm lg:text-base">
 
                     <p>
                         <span class="text-[#FB651E]">
@@ -215,31 +200,59 @@
 
         </section>
 
-        <div class="p-8"></div>
+        <!-- <header class="pt-14 grid grid-cols-2 items-start head max-lg:grid-cols-1 max-lg:pt-8 border">
+            <section class="titre">
+                <h1 class="text-[75px] leading-[1.1] w-full text-black font-[Jost] max-md:text-[48px] max-sm:text-[36px]">
+                    UN BAGAGE POUR <br>
+                    <span class="highlight text-white inline-block w-[370px] px-[20px] py-[8px] bg-[#0B2876] max-sm:w-auto max-sm:px-[12px]">
+                        LA VIE
+                    </span>
+                </h1>
+            </section>
 
-        <section class="px-2 sm:px-8 lg:px-12">
+            <aside class="pt- max-w-[1000px] text-[18px] leading-relaxed space-y-3 max-lg:mt-6 max-md:text-[16px]">
 
-            <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-8">
+                <img src="assets/Star.png" alt="étoile violette"
+                    class="ml-[30rem] pb-12 top-10 w-13 max-lg:ml-auto max-lg:mr-0 max-sm:ml-0">
 
-                <h2 class="md:shrink-0 font-poppins font-light text-3xl lg:text-4xl">
+                <p class="ml-[130px] leading-tight max-lg:ml-0">
+                    <span class="text-[#FB651E]">
+                        Un parcours en 5 étapes
+                    </span>
+                    pour <br> réveiller le potentiel de votre <br> enfant.
+                </p>
+
+                <p class="ml-[130px] leading-tight max-lg:ml-0">
+                    Plus qu'une simple déconnexion, <br>
+                    nos ateliers sont <strong>une véritable <br> gymnastique cérébrale
+                    pour <br> passer du "Cerveau Passif"
+                    au <br> "Cerveau Actif"</strong>.
+                </p>
+
+            </aside>
+
+        </header> -->
+
+        <div class="p-12"></div>
+        <section class="px-2 sm:px-4 md:px-8 lg:px-16 soustitre ">
+
+            <header class="flex items-center gap-8 max-sm:gap-4">
+
+                <h2 class="titre2 pb-4 font-[Poppins] font-light text-5xl max-md:text-3xl max-sm:text-2xl">
                     Pourquoi choisir ces ateliers ?
                 </h2>
 
-                <hr class=" md:grow bg-black w-1/2 md:w-auto">
+                <hr class="flex-grow border-gray-400 max-sm:hidden">
 
-            </div>
-            <div class="p-4"></div>
-            <article>
+            </header>
 
-                <p class="font-poppins">
-                    <span class="text-[#FB651E]">L'institut De-connecté</span> est une programme
-                    d'accompagnement des enfants à travers des ateliers
-                    liquide et une approche sans jugement. Avec
-                    l'engagement des parents, nous aidons les enfants à
-                    maîtriser leurs écrans pour booster leurs facultés
-                    cérébrale, leur concentration et leur créativité.
+            <article class="leading-relaxed">
+                <p class="font-[Poppins] font-medium w-full text-xl max-md:text-lg max-sm:text-base">
+                    <span>L'institut De-connecté</span> est un programme d'accompagnement des enfants à travers des
+                    ateliers ludiques et une approche <br class="max-md:hidden"> sans jugement.
+                    Avec l'engagement des parents, nous aidons les enfants à maîtriser leurs écrans pour <br
+                        class="max-md:hidden"> booster leurs facultés cérébrales, leur concentration et leur créativité.
                 </p>
-
             </article>
 
         </section>
@@ -247,225 +260,323 @@
 
         <div class="p-8"></div>
 
-        <section class="p-4">
+        <section class="px-2 sm:px-4 md:px-8 lg:px-16">
 
-            <div class="relative rounded-2xl ">
-                <section class=" flex-col ">
+            <figure class="flex flex-col relative rounded-2xl select-none">
+                <section class=" relative rounded-2xl overflow-hidden">
 
                     <!-- Images du carousel -->
-                    <div class="relative rounded-2xl overflow-hidden">
-                        <div class=" absolute top-0 left-0 bg-linear-to-b from-black/0 to-black/80 size-full"></div>
-                        <div class=" w-full h-[200px] sm:h-[400px] md:h-[500px] " id="carousel-track">
+                    <ul class="flex" id="carousel-track">
+                        <li class="min-w-full">
                             <img src="assets/Group 18.jpg"
                                 alt="Enfants en cercle lors d'un atelier Dé-Connecté dans une salle de classe"
-                                class="size-full block object-cover" loading="lazy">
-
+                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
+                                width="1060" height="480">
+                        </li>
+                        <li class="min-w-full">
                             <img src="assets/WhatsApp Image 2026-03-07 at 07.57.54 (1) 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur" class="size-full hidden object-cover"
-                                loading="lazy">
-
+                                alt="Atelier de groupe avec accompagnateur"
+                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
+                                width="1060" height="480">
+                        </li>
+                        <li class="min-w-full">
                             <img src="assets/WhatsApp Image 2026-03-07 at 07.57.54 (2) 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur" class="size-full hidden object-cover"
-                                loading="lazy">
-
+                                alt="Atelier de groupe avec accompagnateur"
+                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
+                                width="1060" height="480">
+                        </li>
+                        <li class="min-w-full">
                             <img src="assets/WhatsApp Image 2026-03-07 at 07.57.54 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur" class="size-full hidden object-cover"
-                                loading="lazy">
-
+                                alt="Atelier de groupe avec accompagnateur"
+                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
+                                width="1060" height="480">
+                        </li>
+                        <li class="min-w-full">
                             <img src="assets/WhatsApp Image 2026-03-07 at 07.58.33 (1) 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur" class="size-full hidden object-cover"
-                                loading="lazy">
-
+                                alt="Atelier de groupe avec accompagnateur"
+                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
+                                width="1060" height="480">
+                        </li>
+                        <li class="min-w-full">
                             <img src="assets/WhatsApp Image 2026-03-07 at 07.58.33 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur" class="size-full hidden object-cover"
-                                loading="lazy">
-
+                                alt="Atelier de groupe avec accompagnateur"
+                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
+                                width="1060" height="480">
+                        </li>
+                        <li class="min-w-full">
                             <img src="assets/WhatsApp Image 2026-03-07 at 07.58.34 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur" class="size-full hidden object-cover"
-                                loading="lazy">
-
+                                alt="Atelier de groupe avec accompagnateur"
+                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
+                                width="1060" height="480">
+                        </li>
+                        <li class="min-w-full">
                             <img src="assets/WhatsApp Image 2026-03-07 at 07.58.35 (1) 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur" class="size-full hidden object-cover"
-                                loading="lazy">
-
+                                alt="Atelier de groupe avec accompagnateur"
+                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
+                                width="1060" height="480">
+                        </li>
+                        <li class="min-w-full">
                             <img src="assets/WhatsApp Image 2026-03-07 at 07.58.35 (2) 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur" class="size-full hidden object-cover"
-                                loading="lazy">
-
+                                alt="Atelier de groupe avec accompagnateur"
+                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
+                                width="1060" height="480">
+                        </li>
+                        <li class="min-w-full">
                             <img src="assets/WhatsApp Image 2026-03-07 at 07.58.35 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur" class="size-full hidden object-cover"
-                                loading="lazy">
+                                alt="Atelier de groupe avec accompagnateur"
+                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
+                                width="1060" height="480">
+                        </li>
+                    </ul>
+                    <blockquote class="absolute bottom-0 w-full h-[600px] text-white text-xl leading-10 px-6 py-7 rounded-3xl 
+                                    flex items-end gap-5 
+                                    bg-gradient-to-b from-transparent via-black/40 to-black
+                                    max-md:h-[400px] max-md:text-base max-md:leading-7
+                                    max-sm:h-[260px] max-sm:text-sm max-sm:leading-6 max-sm:px-3 max-sm:py-4">
 
-                        </div>
-                    </div>
+                        <span class="w-1 rounded-full shrink-0" aria-hidden="true"></span>
 
-                    <!-- Boutons navigation -->
-                    <div
-                        class=" gap-4 md:absolute top-0 left-0 p-2 md:size-full flex items-center justify-center md:justify-between">
-                        <button onclick="setPosition(-1,true)" aria-label="Image précédente"
-                            class="p-4 block rounded-full bg-black text-white flex items-center justify-center hover:cursor-pointer">
-                            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-                        </button>
+                        <p class="mb-2 border-l-4 border-[#FF9447] pl-4 w-[500px] max-md:w-[380px] max-sm:w-full">
+                            L'évaluation et l'accompagnement sont les piliers de l'amélioration continue.
+                        </p>
+                    </blockquote>
 
-                        <button onclick="setPosition(1,true)" aria-label="Image suivante"
-                            class="p-4 block rounded-full bg-black text-white flex items-center justify-center hover:cursor-pointer">
-                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                        </button>
-                    </div>
                 </section>
+                <!-- Boutons navigation -->
+                <nav class="sm:absolute top-0 p-4 left-0 z-10 size-full gap-4 flex items-center sm:justify-between justify-center"
+                    aria-label="Navigation du carousel">
+                    <button id="prev" aria-label="Image précédente"
+                        class="rounded-full bg-black p-2 text-white flex items-center justify-center transition-colors hover:bg-black/90 hover:cursor-pointer">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    </button>
+
+                    <button id="next" aria-label="Image suivante"
+                        class="rounded-full bg-black p-2 text-white flex items-center justify-center transition-colors hover:bg-black/90 hover:cursor-pointer">
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </nav>
 
 
 
-            </div>
-
+            </figure>
 
         </section>
-
         <div class="p-8"></div>
-        <section class="relative font-poppins bg-black py-20 px-2 sm:px-8 lg:px-12">
+        <section class=" relative bg-black py-18 px-2 sm:px-4 md:px-8 lg:px-16 bg-black ">
 
-
-            <h2 class="text-white tracking-widest text-3xl py-8">
-                RESULTATS
-            </h2>
-
+            <header class="py-6">
+                <h2 class="text-white text-center min-[400px]:text-start text-4xl font-[Manrope] max-sm:text-2xl">
+                    RESULTATS
+                </h2>
+            </header>
 
             <!-- Etoile -->
-            <div class="absolute top-0 right-0 p-8">
-                <img src="assets/Star 2.png" alt="étoile violette" class="w-10">
-            </div>
+            <img src="assets/Star 2.png" alt="étoile violette"
+                class="absolute right-24 top-10 w-13 max-sm:right-4 max-sm:w-8">
 
             <!-- Liste résultats -->
-            <ul class=" flex flex-wrap gap-6 text-sm md:text-base lg:text-lg text-white items-center">
+            <!-- <ul
+                class="grid grid-cols-3 gap-8 Liste mx-auto items-center font-[Manrope] max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-4">
 
-                <li class="border border-white rounded-full px-4 py-4  ">
+                <li
+                    class="border border-white rounded-full text-white text-3xl py-8 text-center w-[350px] max-lg:w-full max-sm:text-xl max-sm:py-5">
                     Améliorer la concentration
                 </li>
 
-                <li class="border border-white rounded-full  p-4 ">
+                <li
+                    class="border border-white rounded-full text-white text-4xl py-8 text-center w-[500px] justify-self-center max-lg:w-full max-sm:text-2xl max-sm:py-5">
                     Renforcer la mémoire
                 </li>
 
-                <li class="border border-white rounded-full p-4  ">
+                <li
+                    class="border border-white rounded-full text-white text-2xl px-8 py-8 text-center w-[300px] ml-10 max-lg:w-full max-lg:ml-0 max-sm:text-xl max-sm:py-5">
                     Réveiller les sens
                 </li>
 
-                <li class="border border-white rounded-full px-4  py-4  ">
-                    Libérer de l’énergie
+                <li
+                    class="border border-white rounded-full text-white text-4xl py-8 text-center w-[450px] max-lg:w-full max-sm:text-2xl max-sm:py-5">
+                    Libérer de l'énergie
                 </li>
 
-                <li class="border border-white rounded-full  p-4   ">
+                <li
+                    class="border border-white rounded-full text-white text-2xl px-8 py-8 text-center w-[450px] max-lg:w-full max-sm:text-xl max-sm:py-5">
                     Maîtriser le stress
                 </li>
 
-                <li class="border border-white rounded-full p-4  ">
+                <li
+                    class="border border-white rounded-full text-white text-xl px-8 py-8 text-center w-[400px] max-lg:w-full max-sm:py-5">
                     Affirmer la confiance
                 </li>
 
-                <li class="border border-white rounded-full  p-4  ">
+                <li
+                    class="border border-white rounded-full text-white text-2xl px-8 py-8 text-center w-[300px] max-lg:w-full max-sm:text-xl max-sm:py-5">
                     Apaise le cœur
                 </li>
 
-                <li class="border border-white rounded-full  p-4  ">
+                <li
+                    class="border border-white rounded-full text-white text-3xl px-8 py-8 text-center w-[800px] justify-self-center mr-[-2rem] max-lg:w-full max-lg:mr-0 max-lg:col-span-2 max-sm:col-span-1 max-sm:text-xl max-sm:py-5">
                     Révèle une confiance en soi
                 </li>
 
-                <li class="border border-white rounded-full p-4  ">
+                <li
+                    class="border border-white rounded-full text-white text-xl px-4 py-6 text-center w-[200px] ml-[200px] max-lg:w-full max-lg:ml-0 max-sm:py-5">
                     Tisser des échanges
                 </li>
 
-            </ul>
-
-        </section>
-        <div class="p-8"></div>
-
-        <section class="px-2 sm:px-4 lg:px-12" aria-labelledby="outils-titre">
-
-            <!-- Titre avec barre orange -->
-
-
-            <h2 id="outils-titre"
-                class="border-[#FF9447] border-l-8 text-3xl sm:text-5xl font-poppins font-extralight pl-8 py-2">
-                Les Outils <br /> Pédagogiques Inclus
-            </h2>
-
-
-            <!-- Boîte bordure bleue -->
-            <div
-                class=" py-16 flex flex-col sm:flex-row sm:flex-wrap md:flex-nowrap justify-center gap-16 items-start font-inter">
-                <div class="flex items-start gap-4 w-full sm:w-1/3 lg:w-1/5">
-                    <div class="text-4xl font-semibold">01</div>
-                    <div class="flex flex-col">
-                        <div class="font-semibold ">
-                            Le Carnet de Bord
-                        </div>
-                        <div class="p-2 w-2/3 bg-[#0045FF]"></div>
-                        <p>
-                            Un guide pratique pour suivre ses progrès chaque jour
-                        </p>
+            </ul> -->
+            <div class="flex flex-col text-white gap-2 md:gap-4">
+                <div class="flex flex-col min-[400px]:flex-row w-full items-center gap-2 md:gap-4">
+                    <div
+                        class="w-full min-[400px]:w-fit  border border-white text-center text-xs md:text-sm lg:text-base shrink-1 px-2 sm:px-4 py-4 rounded-full">
+                        Améliorer la concentration
                     </div>
+
+                    <div
+                        class="w-full min-[400px]:w-fit border border-white text-center sm:text-lg md:text-xl lg:text-2xl grow px-2 sm:px-4 py-4 rounded-full">
+                        Renforcer la mémoire
+                    </div>
+
+                    <div
+                        class="w-full min-[400px]:w-fit border border-white text-center text-sm sm:text-base md:text-lg lg:text-xl shrink-1 px-2 sm:px-4  py-4 rounded-full">
+                        Réveiller les sens
+                    </div>
+
+                </div>
+                <div class="flex flex-col min-[400px]:flex-row w-full items-center gap-2 md:gap-4">
+                    <div
+                        class=" w-full min-[400px]:w-fit border border-white text-center md:text-lg lg:text-2xl px-2 sm:px-4 py-4 grow rounded-full">
+                        Libérer de l'énergie
+                    </div>
+
+                    <div
+                        class="w-full min-[400px]:w-fit border border-white text-center md:text-lg lg:text-2xl px-2 sm:px-4 py-4 grow rounded-full">
+                        Maîtriser le stress
+                    </div>
+
+                    <div
+                        class="w-full min-[400px]:w-fit border border-white text-center md:text-lg lg:text-2xl px-2 sm:px-4 py-4 grow rounded-full">
+                        Affirmer la confiance
+                    </div>
+
+                </div>
+                <div class="flex flex-col min-[400px]:flex-row w-full items-center gap-2 md:gap-4">
+
+                    <div
+                        class="w-full min-[400px]:w-fit border shrink-1  border-white text-center text-sm sm:text-base md:text-lg lg:text-xl px-2 sm:px-4 py-4  rounded-full">
+                        Apaise le cœur
+                    </div>
+
+                    <div
+                        class="w-full min-[400px]:w-fit border  border-white text-center sm:text-lg md:text-xl lg:text-2xl px-2 sm:px-4 py-4 grow rounded-full">
+                        Révèle une confiance en soi
+                    </div>
+
+                    <div
+                        class="w-full min-[400px]:w-fit border shrink-1  border-white text-center text-xs md:text-sm lg:text-base px-2 sm:px-4 py-4 rounded-full">
+                        Tisser des échanges
+                    </div>
+
                 </div>
 
-                <div class="flex items-start gap-4 w-full sm:w-1/3 lg:w-1/5">
-                    <div class="text-4xl font-semibold">02</div>
-                    <div class="flex flex-col">
-                        <div class="font-semibold">
-                            La Charte Familiale
-                        </div>
-                        <div class="p-2 w-2/3 bg-[#0045FF]"></div>
-                        <p>
-                            Mettre en place des règles claires, sans conflit
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex items-start gap-4 w-full sm:w-1/3 lg:w-1/5">
-                    <div class="text-4xl font-semibold">03</div>
-                    <div class="flex flex-col">
-                        <div class="font-semibold">
-                            Le Kit "Neuro-Protection
-                        </div>
-                        <div class="p-2 w-2/3 bg-[#0045FF]"></div>
-                        <p>
-                            Des exercices simples pour se calmer, dormir et se concentrer
-                        </p>
-                    </div>
-                </div>
 
             </div>
 
         </section>
 
         <div class="p-8"></div>
+        <section class="px-2 sm:px-4 md:px-8 lg:px-16" aria-labelledby="outils-titre">
 
-
-        <section class="px-2 sm:px-4 lg:px-12">
-
-            <h2 class="font-poppins font-light text-4xl md:text-5xl lg:text-6xl ">
-                Choisissez l'<span class="rounded-full bg-[#D7EEDD] leading-relaxed">offre</span>
-                <span class="relative">
-                    adaptée
-                    <svg class="block absolute w-fill -bottom-1 -left-3" viewBox="0 0 372 33" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M45.0342 1.5H336.4L0.0644531 15.9H371.064L183.066 31.5" stroke="#FFC250"
-                            stroke-width="3" />
-                    </svg>
-                </span>
-                à votre famille
+            <!-- Titre avec barre orange -->
+            <h2 id="outils-titre"
+                class="border-l-6 pl-2 border-l-[#FF9447] text-6xl font-[Jost] font-extralight leading-tight max-md:text-4xl max-sm:text-3xl">
+                Les Outils <br /> Pédagogiques Inclus
             </h2>
 
-            <div class="p-2"></div>
+            <div class="p-8"></div>
 
-            <div class="flex flex-col md:flex-row gap-4 font-poppins">
+            <!-- Boîte bordure bleue -->
+            <article class="font-[Inter]  ">
+                <ol class="w-full  grid md:grid-cols-3 mx-auto sm:grid-cols-2 grid-cols-1 gap-4 lg:gap-8 gap-y-12"
+                    role="list">
+
+                    <!-- 01 -->
+                    <li class="flex items-start gap-3   w-full">
+                        <p class="text-7xl" aria-hidden="true">01</p>
+                        <aside class="w-full ">
+                            <h3 class="outil-titre ">Le Carnet de<br>Bord</h3>
+                            <span class="purple-bar" aria-hidden="true"></span>
+                            <p class="outil-desc">
+                                Un guide pratique<br>
+                                pour suivre<br>
+                                ses progrès<br>
+                                chaque jour
+                            </p>
+                        </aside>
+                    </li>
+
+                    <!-- 02 -->
+                    <li class="flex items-start gap-3  w-full">
+                        <p class="text-7xl" aria-hidden="true">02</p>
+                        <aside class=" w-full">
+                            <h3 class="outil-titre ">La Charte<br>Familiale</h3>
+                            <span class="purple-bar" aria-hidden="true"></span>
+                            <p class="outil-desc">
+                                Mettre en<br>
+                                place des<br>
+                                règles claires,<br>
+                                sans conflit
+                            </p>
+                        </aside>
+                    </li>
+
+
+                    <!-- 03 -->
+                    <li class="flex items-start gap-3 md:w-fit w-full">
+                        <p class="text-7xl" aria-hidden="true">03</p>
+                        <aside class=" w-full">
+                            <h3 class="outil-titre ">Le Kit Neuro-<br>Protection</h3>
+                            <span class="purple-bar" aria-hidden="true"></span>
+                            <p class="outil-desc">
+                                Des exercices<br>
+                                simples pour<br>
+                                se calmer,<br>
+                                dormir et se<br>
+                                concentrer
+                            </p>
+                        </aside>
+                    </li>
+
+                </ol>
+            </article>
+
+        </section>
+
+        <div class="p-8"></div>
+
+        <section class="px-2 sm:px-4 md:px-8 lg:px-16">
+
+            <header class="flex items-center justify-between gap-8 max-sm:gap-4">
+
+                <h2 class="font-[Poppins] font-light text-6xl max-md:text-4xl max-sm:text-3xl">
+                    Choisissez l'<span class="rounded-full bg-[#D7EEDD] px-3 py-1">offre</span> <br>
+                    <span class="relative">
+                        <img src="assets/Vector 5.png" alt="illustration"
+                            class="absolute left-0 bottom-0 -z-1 w-full object-contain hidden sm:block">
+                        adaptée
+                    </span>à votre <br>
+                    famille
+                </h2>
+            </header>
+
+            <ol class="grid grid-cols-3 gap-6 mt-16 list-none max-lg:grid-cols-1 max-lg:max-w-[500px] max-lg:mx-auto max-sm:max-w-full max-sm:gap-4 max-sm:mt-10"
+                role="list">
 
                 <!-- Basique -->
-                <div class="rounded-xl p-4 md:p-8 flex flex-col justify-between bg-[#000000]">
+                <li class="rounded-xl p-8 flex flex-col justify-between min-h-[420px] bg-[#000000] max-sm:p-6">
                     <article>
-                        <span class="block size-12 rounded-full bg-[#5846FB]"></span>
-                        <div class="p-4"></div>
-                        <h3 class="text-white text-3xl ">Basique</h3>
-                        <div class="p-4"></div>
-                        <ul class="text-white ">
+                        <span class="block w-12 h-12 rounded-full mb-6 bg-[#5846FB]"></span>
+                        <h3 class="text-white text-3xl font-[Poppins] font-light mb-6 max-sm:text-2xl">Basique</h3>
+                        <ul class="text-white text-1xl font-[Poppins] space-y-1 leading-relaxed list-none">
                             <li>• Guide des parents</li>
                             <li>• Charte familiale</li>
                             <li>• Evaluation de l'indice de santé numérique</li>
@@ -474,20 +585,18 @@
                             <li>• Accompagnement 2 fois après le cycle</li>
                         </ul>
                     </article>
-                    <div class="p-4"></div>
-                    <button class=" w-fit text-white rounded-full p-2 text-xl mx-auto border border-3 border-[#CE603B]">
-                        213 000 Ariary
+                    <button
+                        class="mt-8 w-full text-white rounded-full py-3 text-2xl font-[Poppins] font-light border border-[3px] border-[#CE603B] rounded-[20px] max-sm:text-xl max-sm:py-2">
+                        218 000 Ariary
                     </button>
-                </div>
+                </li>
 
                 <!-- Avancé -->
-                <div class="rounded-xl p-4 md:p-8 flex flex-col  justify-between bg-[#484BFF]">
+                <li class="rounded-2xl p-8 flex flex-col justify-between min-h-[420px] avance bg-[#484BFF] max-sm:p-6">
                     <article>
-                        <span class="block size-12 rounded-full bg-black"></span>
-                        <div class="p-4"></div>
-                        <h3 class="text-white text-3xl ">Avance</h3>
-                        <div class="p-4"></div>
-                        <ul class="text-white ">
+                        <span class="block w-12 h-12 rounded-full bg-black mb-6"></span>
+                        <h3 class="text-white text-3xl font-[Poppins] font-light mb-6 max-sm:text-2xl">Avance</h3>
+                        <ul class="text-white text-1xl font-[Poppins] space-y-1 leading-relaxed list-none">
                             <li>• Guide des parents</li>
                             <li>• Charte familiale</li>
                             <li>• Evaluation de l'indice de santé numérique</li>
@@ -498,20 +607,18 @@
                             <li>• Parking a smartphone</li>
                         </ul>
                     </article>
-                    <div class="p-4"></div>
-                    <button class="w-fit text-white rounded-full p-2 text-xl mx-auto border border-3 border-[#CE603B]">
-                        283 000 Ariary
+                    <button
+                        class="mt-8 w-full text-white rounded-full py-3 text-2xl font-[Poppins] font-light border border-[3px] border-[#CE603B] rounded-[20px]  max-sm:text-xl max-sm:py-2">
+                        278 000 Ariary
                     </button>
-                </div>
+                </li>
 
                 <!-- Premium -->
-                <div class="rounded-xl p-4 md:p-8 flex flex-col  justify-between bg-[#FF926D]">
+                <li class="rounded-2xl p-8 flex flex-col justify-between min-h-[420px] bg-[#FF926D] max-sm:p-6">
                     <article>
-                        <span class="block size-12 rounded-full bg-white"></span>
-                        <div class="p-4"></div>
-                        <h3 class="text-white text-3xl ">Premium</h3>
-                        <div class="p-4"></div>
-                        <ul class="text-white ">
+                        <span class="block w-12 h-12 rounded-full bg-white mb-6"></span>
+                        <h3 class="text-white text-3xl font-[Poppins] font-light mb-6 max-sm:text-2xl">Premium</h3>
+                        <ul class="text-white text-1xl font-[Poppins] space-y-1 leading-relaxed list-none">
                             <li>• Guide des parents</li>
                             <li>• Charte familiale</li>
                             <li>• Evaluation de l'indice de santé numérique</li>
@@ -523,228 +630,271 @@
                             <li>• Session spéciale</li>
                         </ul>
                     </article>
-                    <div class="p-4"></div>
-                    <button class="w-fit text-white rounded-full p-2 text-xl mx-auto border border-3 border-[#CE603B]">
-                        323 000 Ariary
+                    <button
+                        class="mt-8 w-full text-white rounded-full py-3 text-2xl font-[Poppins] font-light border border-[3px] border-[#CE603B] rounded-[20px]  max-sm:text-xl max-sm:py-2">
+                        338 000 Ariary
                     </button>
-                </div>
+                </li>
 
-            </div>
+            </ol>
 
         </section>
 
+
     </main>
-    
-</body>
-<div class="p-8"></div>
-<section class="bg-[#112772] text-white grid md:grid-cols-2 p-8 gap-2">
 
-    <div>
+    <!-- ═══════════════════════════════════════
+     INSCRIPTION
+════════════════════════════════════════ -->
+    <section id="inscription" class="bg-[#112772] text-white py-16 sm:py-24">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-start max-w-6xl mx-auto">
 
-        <h1 class="text-2xl font-bold uppercase text-center md:text-start">
-            Commencer dès aujourd'hui !!
-        </h1>
-        <div class="p-3"></div>
-        <p class="md:text-lg opacity-90">
-            La réussite de nos enfants est un travail d'équipe.
-            Téléchargez gratuitement notre outil <strong class="text-orange-400 font-bold">"Charte Familiale :
-                Cerveau en pleine forme !"</strong>
-            et découvrez comment
-            mettre en place des rituels simples :
-        </p>
+                <!-- Texte gauche -->
+                <div>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-Poppins uppercase mb-6 sm:mb-8 leading-tight">
+                        COMMENCER DES AUJOURD'HUI !!
+                    </h2>
 
+                    <p class="text-base sm:text-lg text-white/50 font-Poppins mb-6 sm:mb-8 opacity-90 leading-relaxed">
+                        La réussite de nos enfants est un travail d'équipe. Téléchargez gratuitement notre outil
+                        "Charte Familiale : Cerveau en pleine forme !" et découvrez comment mettre en place des
+                        rituels simples :
+                    </p>
 
-        <ul class="space-y-2 pl-8 list-disc font-medium text-sm md:text-base">
-            <li>
-                Zones de paix (0 écran).
-            </li>
-            <li>
+                    <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-12 opacity-90 ">
+                        <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                            Créer des "Zones de paix" (0 écran).
+                        </li>
+                        <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                            Instaurer le couvre-feu numérique pour un meilleur sommeil.
+                        </li>
+                        <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                            Le "Défi des parents" pour montrer l'exemple.
+                        </li>
+                    </ul>
 
-                Couvre-feu numérique.
-            </li>
-            <li>
+                    <button
+                        class="bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base">
+                        Recevoir une charte familiale gratuite
+                    </button>
 
-                Défi des parents exemplaire.
-            </li>
-        </ul>
+                    <div class="flex gap-10 sm:gap-16">
+                        <div>
+                            <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">+500</div>
+                            <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Clients
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">100%</div>
+                            <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Confiances
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="p-6"></div>
-        <div class="hidden md:flex items-center text-xl font-bold gap-12 text-white text-center ">
-            <aside class="flex flex-col ">
-                <strong class="sm:text-3xl lg:text-5xl">+500</strong>
-                <small>Clients</small>
-            </aside>
-            <aside class="flex flex-col">
-                <strong class="sm:text-3xl lg:text-5xl">100%</strong>
-                <small>Confiances</small>
-            </aside>
-        </div>
-    </div>
+                <!-- Formulaire -->
+                <div class="w-full font-medium font-Poppins">
+                    <form class="space-y-6 sm:space-y-8">
+                        <div>
+                            <input type="text" placeholder="Nom de parents ou responsable :"
+                                class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Adresse email"
+                                class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Numéro de téléphone"
+                                class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Nom de l'enfant :"
+                                class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 sm:gap-8">
+                            <div>
+                                <input type="text" placeholder="Age de l'enfant"
+                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Classe"
+                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                            </div>
+                        </div>
+                        <div class="pt-4 flex justify-center">
+                            <button type="submit"
+                                class="bg-gradient-to-r from-[#FF9447] to-[#FFD902] text-white font-bold py-3 px-8 sm:px-12 rounded-full shadow-lg hover:scale-105 transition-transform text-sm sm:text-base">
+                                Inscrivez-vous
+                            </button>
+                        </div>
+                    </form>
+                </div>
 
-    <form action="#" method="POST" class="px-3 sm:px-6 py-12">
-
-        <div class="grid grid-cols-1">
-            <label class="block  border-b border-white pb-2 focus-within:border-orange-400 transition-all">
-                <input type="text" name="parent_name" placeholder="Nom de parents ou responsable" required
-                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
-            </label>
-            <div class="p-3"></div>
-            <label class="block  border-b border-white pb-1 focus-within:border-orange-400 transition-all">
-                <input type="email" name="email" placeholder="Adresse email" required
-                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
-            </label>
-            <div class="p-3"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-1">
-            <label class="block border-b  border-white pb-1 focus-within:border-orange-400 transition-all">
-                <input type="tel" name="phone" placeholder="Numéro de téléphone"
-                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
-            </label>
-            <div class="p-3"></div>
-            <label class="block border-b border-white pb-1 focus-within:border-orange-400 transition-all">
-                <input type="text" name="child_name" placeholder="Nom de l’enfant :"
-                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
-            </label>
-            <div class="p-3"></div>
-        </div>
-
-        <div class="grid grid-cols-2 gap-3">
-            <label class="block  border-b border-white pb-1 focus-within:border-orange-400 transition-all">
-                <input type="number" name="age" placeholder="Age de l’enfant"
-                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
-            </label>
-
-            <label class="block  border-b border-white pb-1 focus-within:border-orange-400 transition-all">
-                <input type="text" name="class" placeholder="Classe"
-                    class="bg-transparent w-full outline-none text-sm placeholder:text-white/50">
-            </label>
-
-        </div>
-        <div class="p-6"></div>
-
-        <div class="flex justify-center">
-
-            <button type="submit"
-                class="w-fit bg-gradient-to-r from-[#FF9447] to-[#D4AF37] text-white font-bold py-3 px-8 rounded-full text-sm shadow-md transition-all transform hover:-translate-y-0.5 active:translate-y-0 uppercase tracking-wide">
-                Inscrivez-vous
-            </button>
-        </div>
-
-    </form>
-
-</section>
-<footer class="w-full bg-white py-16 px-6 font-poppins border">
-    <div class="flex flex-col md:flex-row gap-4 md:gap-1 items-center md:items-start">
-
-        <div class="w-full flex flex-col items-center md:items-start md:w-[36%] shrink-0">
-            <h2 class="text-2xl font-bold">DE-CONNECTE</h2>
-
-            <div class="flex gap-8 items-center text-4xl py-2" aria-label="Liens vers nos réseaux sociaux">
-                <a href="https://facebook.com/ton-lien" target="_blank" rel="noopener noreferrer"
-                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                    <i class="fa-brands fa-facebook "></i>
-
-                </a>
-
-                <a href="https://wa.me/ton-numero" target="_blank" rel="noopener noreferrer"
-                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                    <i class="fa-brands fa-square-whatsapp "></i>
-
-                </a>
-
-                <a href="https://instagram.com/ton-lien" target="_blank" rel="noopener noreferrer"
-                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                    <i class="fa-brands fa-square-instagram "></i>
-
-                </a>
-
-                <a href="https://linkedin.com/in/ton-lien" target="_blank" rel="noopener noreferrer"
-                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                    <i class="fa-brands fa-linkedin  "></i>
-
-                </a>
             </div>
-            <div class="p-1"></div>
-            <p class="text-black/80">
-                Ensemble, nous pouvons réveiller le Génie qui dort en chaque enfant. <br> <span
-                    class="text-[#3A3DFF] font-medium cursor-pointer">"Approche innovative de l'Institut
-                    Dé-connecté"</span>
-            </p>
-        </div>
-
-        <div class="p-8 w-full md:hidden">
-            <div class="w-full h-[1px] bg-black/30 " ></div>
-
-        </div>
-        <div class="shrink-0 px-16">
-            
-            <h3 class="font-bold text-[#1E1E1E] py-2">Liens utiles</h3>
-            <ul class="flex flex-col gap-3 font-Regular text-black">
-                <li><a href="../index.html" class="hover:text-[#3A3DFF] transition">Accueil</a></li>
-                <li><a href="../a-propos/index.html" class="hover:text-[#3A3DFF] transition">A propos</a></li>
-                <li><a href="../ateliers/index.html" class="hover:text-[#3A3DFF] transition">Nos ateliers</a></li>
-                <li><a href="../contact/index.html" class="hover:text-[#3A3DFF] transition">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="p-8 w-full md:hidden">
-            <div class="w-full h-[1px] bg-black/30 " ></div>
-
-        </div>
-        <div class="grow ">
-            <h3 class="md:text-lg font-medium text-[#1E1E1E]">
-                Offrez à votre enfant les clés de sa réussite numérique. Réservez sa place pour la prochaine session et
-                retrouvez la sérénité à la maison.
-            </h3>
-            <div class="w-full p-4 ">
-                <div class="w-[72%] h-[1px] bg-black"></div>
-            </div>
-            <p class="text-xs text-[rgba(0,0,0,0.56)] font-medium">
-                Les places sont limitées pour garantir un suivi de qualité
-            </p>
-            <div class="p-2"></div>
-            <div class="flex justify-end">
-                <a href="#"
-                    class="bg-[#FF9447] text-white font-semibold py-3 px-8 rounded-2xl shadow-lg hover:shadow-xl hover:brightness-110 transition transform hover:-translate-y-1">
-                    Inscrivez-vous
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <section class="pt-8">
-        <div class="flex items-center gap-2 text-black">
-            <i class="fa-solid fa-location-dot w-6 h-6 flex items-center justify-center" aria-hidden="true"></i>
-            <span class="font-light">Antananarivo - Madagascar</span>
         </div>
     </section>
-</footer>
 
-<script>
-        let images_carousel = document.querySelector('#carousel-track').children;
-        let current = 0;
-        let clicked = false;
-        function setPosition(value, click = false) {
-            images_carousel[current].classList.remove('block');
-            images_carousel[current].classList.add('hidden');
-            current = (current + value + images_carousel.length) % images_carousel.length;
-            images_carousel[current].classList.remove('hidden');
-            images_carousel[current].classList.add('block');
-            clicked = click;
 
-        }
-        let carousel_animation = setInterval(
-            () => {
-                if (clicked) {
-                    clicked = false;
+    <!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+    <footer class="bg-white py-8 px-4 sm:px-6 font-sans">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 items-start">
+
+            <!-- Brand -->
+            <aside class="space-y-5 sm:space-y-6">
+                <h2 class="text-xl sm:text-4xl  tracking-tighter font-Poppins">DE-CONNECTE</h2>
+
+                <nav class="flex gap-4 sm:gap-5 items-center flex-wrap" aria-label="Réseaux sociaux">
+                    <!-- Facebook -->
+                    <a href="https://facebook.com/ton-lien" target="_blank" rel="noopener noreferrer"
+                        class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                        <svg class="h-10 w-10 sm:h-12 sm:w-12" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/ton-numero" target="_blank" rel="noopener noreferrer"
+                        class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                        <svg class="h-10 w-10 sm:h-12 sm:w-12" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        <span class="sr-only">WhatsApp</span>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/ton-lien" target="_blank" rel="noopener noreferrer"
+                        class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                        <svg class="h-10 w-10 sm:h-12 sm:w-12" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/ton-lien" target="_blank" rel="noopener noreferrer"
+                        class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                        <svg class="h-10 w-10 sm:h-12 sm:w-12" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </nav>
+
+                <p class="text-sm sm:text-base lg:text-lg text-gray-500 max-w-xs leading-relaxed font-Poppins">
+                    Ensemble, nous pouvons réveiller le Génie qui dort en chaque enfant. <br>
+                    <span class="text-[#3A3DFF] font-medium cursor-pointer">"Approche innovative de l'Institut
+                        Dé-connecté"</span>
+                </p>
+            </aside>
+
+            <!-- Liens utiles -->
+            <nav class="space-y-3 sm:space-y-4 font-Jost">
+                <h3 class="font-bold text-gray-900 uppercase text-sm sm:text-base lg:text-lg tracking-widest ">Liens
+                    utiles</h3>
+                <ul class="space-y-2 sm:space-y-3 text-black text-base sm:text-lg lg:text-xl font-Poppins">
+                    <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Accueil</a></li>
+                    <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">A propos</a></li>
+                    <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Nos ateliers</a></li>
+                    <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- CTA Footer -->
+            <article class="space-y-4 sm:space-y-6">
+                <h3
+                    class="text-base sm:text-lg md:text-xl lg:text-2xl font-medium font-Poppins text-[#1E1E1E] leading-tight font-Poppins">
+                    Offrez à votre enfant les clés de sa réussite numérique. Réservez sa place pour la prochaine
+                    session et retrouvez la sérénité à la maison.
+                </h3>
+                <hr class="border-black w-full sm:w-64 md:w-72 lg:w-96">
+                <div class="flex justify-start sm:justify-end">
+                    <a href="#inscription"
+                        class="bg-gradient-to-r from-[#FF9447] to-[#FFE100] text-white font-semibold text-base sm:text-lg lg:text-xl py-3 px-8 sm:px-12 rounded-2xl shadow-lg hover:shadow-xl hover:brightness-110 transition-all transform hover:-translate-y-1 inline-block">
+                        Inscrivez-vous
+                    </a>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-500 font-medium font-Poppins">
+                    Les places sont limitées pour garantir un suivi de qualité
+                </p>
+            </article>
+        </div>
+
+        <!-- Adresse -->
+        <div class="container mx-auto mt-4 sm:mt-6 pt-6 sm:pt-8 border-t border-gray-100">
+            <div class="flex items-center gap-2 text-black text-sm sm:text-base lg:text-lg">
+                <svg class="h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+                <span class="font-light">Antananarivo - Madagascar</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const track = document.getElementById('carousel-track');
+        const original = [...track.querySelectorAll('li')];
+        const total = original.length; // 10
+        let isOpen = false;
+
+        track.prepend(original[total - 1].cloneNode(true));
+        track.appendChild(original[0].cloneNode(true));
+
+        let current = 1;
+        let isAnimating = false;
+
+        const setPosition = (animate) => {
+            track.style.transition = animate ? 'transform 500ms ease-in-out' : 'none';
+            track.style.transform = `translateX(-${current * 100}%)`;
+        };
+
+        setPosition(false);
+
+        const go = (dir) => {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            current += dir;
+            setPosition(true);
+
+            setTimeout(() => {
+
+                if (current === total + 1) {
+                    current = 1;
+                    setPosition(false);
                 }
-                else {
-                    setPosition(1);
+                if (current === 0) {
+                    current = total;
+                    setPosition(false);
                 }
-            }
-            , 3500);
+                isAnimating = false;
+            }, 510);
+        };
 
+        document.getElementById('prev').addEventListener('click', () => go(-1));
+        document.getElementById('next').addEventListener('click', () => go(1));
+
+        // Auto-play
+        let autoPlay = setInterval(() => go(1), 3000);
+
+        // Réinitialise l'auto-play après clic manuel
+        document.getElementById('prev').addEventListener('click', () => {
+            clearInterval(autoPlay);
+            autoPlay = setInterval(() => go(1), 3000);
+        });
+        document.getElementById('next').addEventListener('click', () => {
+            clearInterval(autoPlay);
+            autoPlay = setInterval(() => go(1), 3000);
+        });
     </script>
+</body>
 
 </html>

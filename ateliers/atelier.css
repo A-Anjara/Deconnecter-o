@@ -1,0 +1,50 @@
+body {
+  overflow-x: clip; /* bloque horizontal SANS bloquer le scroll vertical*/
+}
+
+.soustitre article p span{
+    color: #B93F16;
+}
+
+/* Barre orange gauche du titre outils */
+.orange-bar {
+    width: 7px;
+    background-color: #FF9447;
+}
+
+/* Numéros grands */
+.numero {
+    font-size: 5rem;
+    font-weight: 200;  
+}
+
+/* Barre violette sous le titre de chaque outil */
+.purple-bar {
+    display: block;
+    width: 70px;
+    height: 10px;
+    background-color: #0045FF;
+    margin: 6px 0;
+}
+
+/* Titre outil en bleu */
+.outil-titre {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.outil-desc {
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.dernier button{
+    border: 1px solid #CE603B;
+    border-width: 3px;
+    border-radius: 20px;
+}
+
+figure nav i{
+    font-size: 30px;
+}
