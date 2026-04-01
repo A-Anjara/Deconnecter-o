@@ -40,7 +40,7 @@ function onScroll() {
   clearTimeout(scrollTimeout);
   scrollTimeout = setTimeout(() => {
     header.classList.remove("-translate-y-[100%]");
-  }, 1250);
+  }, 800);
 }
 
 window.addEventListener("scroll", onScroll, { passive: true });
