@@ -7,12 +7,12 @@
     <title>Libérez le potentiel de votre enfant | De-Connecte</title>
     <meta name="description" content="Ateliers basés sur les neurosciences pour réduire le temps d'écran.">
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Manrope:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
     <style>
@@ -72,6 +72,7 @@
         .temo-img-l {
             transition: transform 0.3s ease;
         }
+
         .bg-clip-text {
             -webkit-background-clip: text;
             background-clip: text;
@@ -81,6 +82,7 @@
             -webkit-text-fill-color: transparent;
         }
     </style>
+    <link rel="stylesheet" href="main.css">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,7 +141,7 @@
                 <div>
                     <img src="./assets/Logo.png" class="w-10" alt="">
                 </div>
-                <div class="flex-col flex" id="logo_text">
+                <div class="flex-col flex font-[DM_Sans]" id="logo_text">
                     <span class="font-bold text-lg">Dé-connecté</span>
                     <span class="text-xs font-light">Réveille le génie en toi</span>
                 </div>
@@ -186,7 +188,7 @@
 
     <main>
 
-<!-- ═══════════════════════════════════════
+        <!-- ═══════════════════════════════════════
      HERO
 ════════════════════════════════════════ -->
         <div class="relative overflow-hidden h-screen max-h-screen mb-4" id="section_hero">
@@ -348,7 +350,7 @@
             </article>
         </section>
 
-<!-- ═══════════════════════════════════════
+        <!-- ═══════════════════════════════════════
      TÉMOIGNAGES
 ════════════════════════════════════════ -->
         <section class="py-16 sm:py-24 bg-[#FAFAFF] w-full">
@@ -472,10 +474,10 @@
                             </li>
                         </ul>
 
-                        <button
-                            class="bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base">
+                        <a href="./Charte-familiale.pdf"
+                            class="inline-block bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base" download="Charte-familiale.pdf">
                             Recevoir une charte familiale gratuite
-                        </button>
+                        </a>
 
                         <div class="flex gap-10 sm:gap-16">
                             <div>
@@ -542,7 +544,9 @@
 
                 <!-- Brand -->
                 <aside class="space-y-5 sm:space-y-6">
-                    <h2 class="text-xl sm:text-4xl  tracking-tighter font-Poppins">DE-CONNECTE</h2>
+                    <div class="block w-48">
+                        <img src="assets/Logo_texted.png" class="block object-fit" alt="">
+                    </div>
 
                     <nav class="flex gap-4 sm:gap-5 items-center flex-wrap" aria-label="Réseaux sociaux">
                         <!-- Facebook -->
@@ -565,8 +569,8 @@
                         </a>
                         <!-- Instagram -->
                         <a href="https://instagram.com/ton-lien" target="_blank" rel="noopener noreferrer"
-                                class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                                <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
+                            class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                            <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
                             </svg>
@@ -594,25 +598,25 @@
                 <nav class="space-y-3 sm:space-y-4 font-Jost">
                     <h3 class="font-bold text-gray-900 uppercase text-sm sm:text-base lg:text-lg tracking-widest ">Liens
                         utiles</h3>
-                    <ul class="space-y-2 sm:space-y-3 text-black text-base sm:text-lg lg:text-lg font-Poppins">
+                    <ul class="space-y-2 sm:space-y-3 text-black text-sm font-Poppins">
                         <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Accueil</a></li>
-                        <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">A propos</a></li>
-                        <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Nos ateliers</a></li>
-                        <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Contact</a></li>
+                        <li><a href="a-propos/index.html" class="hover:text-[#3A3DFF] transition-colors">A propos</a></li>
+                        <li><a href="ateliers/index.html" class="hover:text-[#3A3DFF] transition-colors">Nos ateliers</a></li>
+                        <li><a href="contact/index.html" class="hover:text-[#3A3DFF] transition-colors">Contact</a></li>
                     </ul>
                 </nav>
 
                 <!-- CTA Footer -->
                 <article class="space-y-4 sm:space-y-6">
                     <h3
-                        class="text-base sm:text-lg md:text-lg lg:text-lg font-medium font-Poppins text-[#1E1E1E] leading-tight font-Poppins">
+                        class="text-base font-medium font-Poppins text-[#1E1E1E] leading-tight font-Poppins">
                         Offrez à votre enfant les clés de sa réussite numérique. Réservez sa place pour la prochaine
                         session et retrouvez la sérénité à la maison.
                     </h3>
                     <hr class="border-black w-full sm:w-64 md:w-72 lg:w-96">
                     <div class="flex justify-start sm:justify-end">
                         <a href="#inscription"
-                            class="bg-gradient-to-r from-[#FF9447] to-[#FFE100] text-white font-semibold text-base sm:text-lg lg:text-xl py-3 px-8 sm:px-12 rounded-2xl shadow-lg hover:shadow-xl hover:brightness-110 transition-all transform hover:-translate-y-1 inline-block">
+                            class="bg-gradient-to-r from-[#FF9447] to-[#FFE100] text-white font-semibold text-base py-3 px-8 sm:px-12 rounded-2xl shadow-lg hover:shadow-xl hover:brightness-110 transition-all transform hover:-translate-y-1 inline-block">
                             Inscrivez-vous
                         </a>
                     </div>
@@ -636,9 +640,9 @@
 
     </main>
     <script>
-         header = document.querySelector("header");
-         marker_header = document.querySelector("#section_hero");
-         menu = header.querySelector("#mobile-menu").children;
+        header = document.querySelector("header");
+        marker_header = document.querySelector("#section_hero");
+        menu = header.querySelector("#mobile-menu").children;
 
         //// HEADER CHANGÉ À L'ORIGINAL
         let observer_hero_shown = new IntersectionObserver(
@@ -653,7 +657,7 @@
                             element.classList.add("bg-white");
                         }
                     } else {
-                        header.classList.remove("text-white", "backdrop-blur-xs" );
+                        header.classList.remove("text-white", "backdrop-blur-xs");
                         header.classList.add("text-black", "bg-white", "border-b-1");
                         for (element of menu) {
                             element.classList.remove("bg-white");

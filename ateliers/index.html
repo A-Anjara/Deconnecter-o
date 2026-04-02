@@ -9,13 +9,13 @@
         content="Programme en 5 séances pour aider votre enfant à réduire les écrans, améliorer sa concentration et retrouver motivation et confiance. Inscription ouverte.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-     <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="atelier.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script type="application/ld+json">
 {
@@ -117,7 +117,7 @@
                 <div>
                     <img src="../assets/Logo.png" class="w-10" alt="">
                 </div>
-                <div class="flex-col flex" id="logo_text">
+                <div class="flex-col flex font-[DM_Sans]" id="logo_text">
                     <span class="font-bold text-lg">Dé-connecté</span>
                     <span class="text-xs font-light">Réveille le génie en toi</span>
                 </div>
@@ -183,7 +183,8 @@
                     LA VIE
                 </div>
 
-                <div class="flex flex-col w-full w-full md:w-4/9 lg:w-96 text-sm sm:text-base md:text-sm lg:text-base mr-12">
+                <div
+                    class="flex flex-col w-full w-full md:w-4/9 lg:w-96 text-sm sm:text-base md:text-sm lg:text-base mr-12">
 
                     <p>
                         <span class="text-[#FB651E]">
@@ -647,7 +648,7 @@
 
     </main>
 
-<!-- ═══════════════════════════════════════
+    <!-- ═══════════════════════════════════════
      INSCRIPTION
 ════════════════════════════════════════ -->
         <section id="inscription" class="bg-[#112772] text-white py-16 sm:py-24">
@@ -682,10 +683,10 @@
                             </li>
                         </ul>
 
-                        <button
-                            class="bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base">
+                        <a href="../Charte-familiale.pdf"
+                            class="inline-block bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base" download="Charte-familiale.pdf">
                             Recevoir une charte familiale gratuite
-                        </button>
+                        </a>
 
                         <div class="flex gap-10 sm:gap-16">
                             <div>
@@ -752,21 +753,13 @@
 
                 <!-- Brand -->
                 <aside class="space-y-5 sm:space-y-6">
-                    
-                        <div href="/" class="block flex items-center gap-4 font-black font-inter ">
-                            <div>
-                                <img src="./assets/Logo.png" class="w-10" alt="">
-                            </div>
-                            <div class="flex-col flex" id="logo_text">
-                                <span class="font-bold text-lg">Dé-connecté</span>
-                                <span class="text-xs font-light">Réveille le génie en toi</span>
-                            </div>
-                        </div>
-                    
+                    <div class="block w-48">
+                        <img src="../assets/Logo_texted.png" class="block object-fit" alt="">
+                    </div>
 
                     <nav class="flex gap-4 sm:gap-5 items-center flex-wrap" aria-label="Réseaux sociaux">
                         <!-- Facebook -->
-                        <a href="https://web.facebook.com/profile.php?id=61579571357584" target="_blank" rel="noopener noreferrer"
+                        <a href="https://facebook.com/ton-lien" target="_blank" rel="noopener noreferrer"
                             class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
                             <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
                                 <path
@@ -775,7 +768,7 @@
                             <span class="sr-only">Facebook</span>
                         </a>
                         <!-- WhatsApp -->
-                        <a href="https://wa.me/261347799424" target="_blank" rel="noopener noreferrer"
+                        <a href="https://wa.me/ton-numero" target="_blank" rel="noopener noreferrer"
                             class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
                             <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
                                 <path
@@ -784,7 +777,7 @@
                             <span class="sr-only">WhatsApp</span>
                         </a>
                         <!-- Instagram -->
-                        <a href="https://www.instagram.com/deconnecte2026/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://instagram.com/ton-lien" target="_blank" rel="noopener noreferrer"
                             class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
                             <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
                                 <path
@@ -793,7 +786,7 @@
                             <span class="sr-only">Instagram</span>
                         </a>
                         <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/company/institut-d%C3%A9-connect%C3%A9/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer"
+                        <a href="https://linkedin.com/in/ton-lien" target="_blank" rel="noopener noreferrer"
                             class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
                             <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
                                 <path
@@ -815,10 +808,10 @@
                     <h3 class="font-bold text-gray-900 uppercase text-sm sm:text-base lg:text-lg tracking-widest ">Liens
                         utiles</h3>
                     <ul class="space-y-2 sm:space-y-3 text-black text-sm font-Poppins">
-                        <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Accueil</a></li>
-                        <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">A propos</a></li>
+                        <li><a href="../index.html" class="hover:text-[#3A3DFF] transition-colors">Accueil</a></li>
+                        <li><a href="../a-propos/index.html" class="hover:text-[#3A3DFF] transition-colors">A propos</a></li>
                         <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Nos ateliers</a></li>
-                        <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Contact</a></li>
+                        <li><a href="../contact/index.html" class="hover:text-[#3A3DFF] transition-colors">Contact</a></li>
                     </ul>
                 </nav>
 
