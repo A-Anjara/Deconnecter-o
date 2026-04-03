@@ -3,7 +3,7 @@
 
     <!-- Page d'accueil -->
     <url>
-        <loc>https://www.tonsite.com/</loc>
+        <loc>https://deconnecte.com/</loc>
         <lastmod>2026-03-21</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
     <!-- À propos -->
     <url>
-        <loc>https://www.tonsite.com/a-propos</loc>
+        <loc>https://deconnecte.com/a-propos</loc>
         <lastmod>2026-03-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -19,7 +19,7 @@
 
     <!-- Ateliers -->
     <url>
-        <loc>https://www.tonsite.com/ateliers</loc>
+        <loc>https://deconnecte.com/ateliers</loc>
         <lastmod>2026-03-21</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -27,7 +27,7 @@
 
     <!-- Contact / FAQ -->
     <url>
-        <loc>https://www.tonsite.com/contact</loc>
+        <loc>https://deconnecte.com/contact</loc>
         <lastmod>2026-03-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

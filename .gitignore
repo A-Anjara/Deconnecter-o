@@ -1,2 +1,6 @@
 code
 code-prod
+node_modules/
+package-lock.json
+package.json
+template.css

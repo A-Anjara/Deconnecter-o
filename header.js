@@ -1,9 +1,6 @@
- header = document.querySelector("header");
- marker_header = document.querySelector("#section_hero");
- menu = header.querySelector("#mobile-menu").children;
- logo_text = header.querySelector("#logo_text");
-
-
+header = document.querySelector("header");
+marker_header = document.querySelector("#section_hero");
+menu = header.querySelector("#mobile-menu").children;
 
 ///// HEADER EN HAUT
 let observer_header_moved = new IntersectionObserver(
@@ -11,11 +8,7 @@ let observer_header_moved = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         header.classList.remove("backdrop-blur-xs");
-        logo_text.classList.remove("hidden");
-        logo_text.classList.add("flex");
       } else {
-        logo_text.classList.remove("flex");
-        logo_text.classList.add("hidden");
         header.classList.add("backdrop-blur-xs");
       }
     });
