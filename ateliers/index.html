@@ -17,6 +17,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <style>
+        .text-transparent {
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,42 +71,37 @@
     {
       "@type": "Offer",
       "name": "Offre Basique",
-      "price": "213000",
+      "price": "218000",
       "priceCurrency": "MGA"
     },
     {
       "@type": "Offer",
       "name": "Offre Avancée",
-      "price": "283000",
+      "price": "278000",
       "priceCurrency": "MGA"
     },
     {
       "@type": "Offer",
       "name": "Offre Premium",
-      "price": "323000",
+      "price": "3238000",
       "priceCurrency": "MGA"
     }
   ]
 }
 </script>
+     
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Institut Dé-Connecté",
-  "image": "https://www.tonsite.com/assets/Bg.jpg",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Antananarivo",
     "addressCountry": "MG"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "-18.8792",
-    "longitude": "47.5079"
-  },
-  "url": "https://www.tonsite.com",
-  "telephone": "+261XXXXXXXXX"
+  "url": "https://deconnecte.com",
+  "telephone": "261347799424"
 }
 </script>
     <script src="../header.js" defer></script>
@@ -115,16 +115,13 @@
         <div class="order-1">
             <a href="/" class="block flex items-center gap-1 font-black font-inter ">
                 <div>
-                    <img src="../assets/Logo.png" class="w-10" alt="">
+                    <img src="../assets/Logo_texted.png" class="w-48" alt="" id="image_logo">
                 </div>
-                <div class="flex-col flex font-[DM_Sans]" id="logo_text">
-                    <span class="font-bold text-lg">Dé-connecté</span>
-                    <span class="text-xs font-light">Réveille le génie en toi</span>
-                </div>
+
             </a>
         </div>
         <nav class="w-fit sm:grow order-3 sm:order-2 group has-checked:w-full sm:has-checked:w-fit has-checked:p-3"
-            aria-label="Menu principal">
+            aria-label="Menu principal" id="nav">
             <label class="block sm:hidden  rounded-full w-full ">
                 <input type="checkbox" class="hidden">
                 <div class="flex flex-col gap-1 size-[40px] p-2 border rounded-full justify-center group-has-checked:hidden"
@@ -273,65 +270,21 @@
                     <!-- Images du carousel -->
                     <ul class="flex" id="carousel-track">
                         <li class="min-w-full">
-                            <img src="assets/Group 18.jpg"
-                                alt="Enfants en cercle lors d'un atelier Dé-Connecté dans une salle de classe"
+                            <img src="assets/Frame 95627.png"
                                 class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
                                 width="1060" height="480">
                         </li>
                         <li class="min-w-full">
-                            <img src="assets/WhatsApp Image 2026-03-07 at 07.57.54 (1) 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur"
+                            <img src="assets/Frame 95628.png"
                                 class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
                                 width="1060" height="480">
                         </li>
                         <li class="min-w-full">
-                            <img src="assets/WhatsApp Image 2026-03-07 at 07.57.54 (2) 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur"
+                            <img src="assets/Frame 95629.png"
                                 class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
                                 width="1060" height="480">
                         </li>
-                        <li class="min-w-full">
-                            <img src="assets/WhatsApp Image 2026-03-07 at 07.57.54 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur"
-                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
-                                width="1060" height="480">
-                        </li>
-                        <li class="min-w-full">
-                            <img src="assets/WhatsApp Image 2026-03-07 at 07.58.33 (1) 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur"
-                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
-                                width="1060" height="480">
-                        </li>
-                        <li class="min-w-full">
-                            <img src="assets/WhatsApp Image 2026-03-07 at 07.58.33 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur"
-                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
-                                width="1060" height="480">
-                        </li>
-                        <li class="min-w-full">
-                            <img src="assets/WhatsApp Image 2026-03-07 at 07.58.34 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur"
-                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
-                                width="1060" height="480">
-                        </li>
-                        <li class="min-w-full">
-                            <img src="assets/WhatsApp Image 2026-03-07 at 07.58.35 (1) 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur"
-                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
-                                width="1060" height="480">
-                        </li>
-                        <li class="min-w-full">
-                            <img src="assets/WhatsApp Image 2026-03-07 at 07.58.35 (2) 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur"
-                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
-                                width="1060" height="480">
-                        </li>
-                        <li class="min-w-full">
-                            <img src="assets/WhatsApp Image 2026-03-07 at 07.58.35 1.jpg"
-                                alt="Atelier de groupe avec accompagnateur"
-                                class="w-full h-[600px] object-cover max-md:h-[400px] max-sm:h-[260px]" loading="lazy"
-                                width="1060" height="480">
-                        </li>
+
                     </ul>
                     <blockquote class="absolute bottom-0 w-full h-[600px] text-white text-xl leading-10 px-6 py-7 rounded-3xl 
                                     flex items-end gap-5 
@@ -651,201 +604,203 @@
     <!-- ═══════════════════════════════════════
      INSCRIPTION
 ════════════════════════════════════════ -->
-        <section id="inscription" class="bg-[#112772] text-white py-16 sm:py-24">
-            <div class="container mx-auto px-4 sm:px-6">
-                <div class="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-start max-w-6xl mx-auto">
+    <section id="inscription" class="bg-[#112772] text-white py-16 sm:py-24">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-start max-w-6xl mx-auto">
 
-                    <!-- Texte gauche -->
-                    <div>
-                        <h2 class="text-2xl sm:text-3xl md:text-4xl font-Poppins uppercase mb-6 sm:mb-8 leading-tight">
-                            COMMENCER DES AUJOURD'HUI !!
-                        </h2>
+                <!-- Texte gauche -->
+                <div>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-Poppins uppercase mb-6 sm:mb-8 leading-tight">
+                        COMMENCER DES AUJOURD'HUI !!
+                    </h2>
 
-                        <p
-                            class="text-base sm:text-lg text-white/50 font-Poppins mb-6 sm:mb-8 opacity-90 leading-relaxed">
-                            La réussite de nos enfants est un travail d'équipe. Téléchargez gratuitement notre outil
-                            "Charte Familiale : Cerveau en pleine forme !" et découvrez comment mettre en place des
-                            rituels simples :
-                        </p>
+                    <p class="text-base sm:text-lg text-white/50 font-Poppins mb-6 sm:mb-8 opacity-90 leading-relaxed">
+                        La réussite de nos enfants est un travail d'équipe. Téléchargez gratuitement notre outil
+                        "Charte Familiale : Cerveau en pleine forme !" et découvrez comment mettre en place des
+                        rituels simples :
+                    </p>
 
-                        <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-12 opacity-90 ">
-                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
-                                <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Créer des "Zones de paix" (0 écran).
-                            </li>
-                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
-                                <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Instaurer le couvre-feu numérique pour un meilleur sommeil.
-                            </li>
-                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
-                                <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Le "Défi des parents" pour montrer l'exemple.
-                            </li>
-                        </ul>
+                    <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-12 opacity-90 ">
+                        <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                            Créer des "Zones de paix" (0 écran).
+                        </li>
+                        <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                            Instaurer le couvre-feu numérique pour un meilleur sommeil.
+                        </li>
+                        <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
+                            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                            Le "Défi des parents" pour montrer l'exemple.
+                        </li>
+                    </ul>
 
-                        <a href="../Charte-familiale.pdf"
-                            class="inline-block bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base" download="Charte-familiale.pdf">
-                            Recevoir une charte familiale gratuite
-                        </a>
+                    <a href="./Charte-familiale.pdf"
+                        class="inline-block bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base"
+                        download="Charte-familiale.pdf">
+                        Recevoir une charte familiale gratuite
+                    </a>
 
-                        <div class="flex gap-10 sm:gap-16">
-                            <div>
-                                <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">+500</div>
-                                <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Clients
-                                </div>
+                    <div class="flex gap-10 sm:gap-16">
+                        <div>
+                            <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">+500</div>
+                            <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Clients
                             </div>
-                            <div>
-                                <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">100%</div>
-                                <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Confiances
-                                </div>
+                        </div>
+                        <div>
+                            <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">100%</div>
+                            <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Confiances
                             </div>
                         </div>
                     </div>
-
-                    <!-- Formulaire -->
-                    <div class="w-full font-medium font-Poppins">
-                        <form class="space-y-6 sm:space-y-8">
-                            <div>
-                                <input type="text" placeholder="Nom de parents ou responsable :"
-                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                            </div>
-                            <div>
-                                <input type="email" placeholder="Adresse email"
-                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                            </div>
-                            <div>
-                                <input type="tel" placeholder="Numéro de téléphone"
-                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                            </div>
-                            <div>
-                                <input type="text" placeholder="Nom de l'enfant :"
-                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                            </div>
-                            <div class="grid grid-cols-2 gap-4 sm:gap-8">
-                                <div>
-                                    <input type="text" placeholder="Age de l'enfant"
-                                        class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                                </div>
-                                <div>
-                                    <input type="text" placeholder="Classe"
-                                        class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                                </div>
-                            </div>
-                            <div class="pt-4 flex justify-center">
-                                <button type="submit"
-                                    class="bg-gradient-to-r from-[#FF9447] to-[#FFD902] text-white font-bold py-3 px-8 sm:px-12 rounded-full shadow-lg hover:scale-105 transition-transform text-sm sm:text-base">
-                                    Inscrivez-vous
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-
                 </div>
+
+                <!-- Formulaire -->
+                <div class="w-full font-medium font-Poppins">
+                    <form class="space-y-6 sm:space-y-8" id="inscription_form">
+                        <div>
+                            <input type="text" placeholder="Nom de parents ou responsable :" name="nom_responsable"
+                                class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Adresse email" name="adresse_email"
+                                class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Numéro de téléphone" name="telephone"
+                                class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Nom de l'enfant :" name="nom_enfant"
+                                class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 sm:gap-8">
+                            <div>
+                                <input type="text" placeholder="Age de l'enfant" name="age"
+                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Classe" name="classe"
+                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                            </div>
+                        </div>
+                        <div class="pt-4 flex justify-center">
+                            <button type="submit" id="submit_inscription" name="submit_inscription" value="submit"
+                                class="bg-gradient-to-r from-[#FF9447] to-[#FFD902] text-white font-bold py-3 px-8 sm:px-12 rounded-full shadow-lg hover:scale-105 transition-transform text-sm sm:text-base">
+                                Inscrivez-vous
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <!-- ═══════════════════════════════════════
+    <!-- ═══════════════════════════════════════
      FOOTER
 ════════════════════════════════════════ -->
-        <footer class="bg-white py-8 px-4 sm:px-6 font-sans">
-            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 items-start">
+    <footer class="bg-white py-8 px-4 sm:px-6 font-sans">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 items-start">
 
-                <!-- Brand -->
-                <aside class="space-y-5 sm:space-y-6">
-                    <div class="block w-48">
-                        <img src="../assets/Logo_texted.png" class="block object-fit" alt="">
-                    </div>
+            <!-- Brand -->
+            <aside class="space-y-5 sm:space-y-6">
+                <div class="block w-48">
+                    <img src="../assets/Logo_texted.png" class="block object-fit" alt="">
+                </div>
 
-                    <nav class="flex gap-4 sm:gap-5 items-center flex-wrap" aria-label="Réseaux sociaux">
-                        <!-- Facebook -->
-                        <a href="https://facebook.com/ton-lien" target="_blank" rel="noopener noreferrer"
-                            class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                            <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                            </svg>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                        <!-- WhatsApp -->
-                        <a href="https://wa.me/ton-numero" target="_blank" rel="noopener noreferrer"
-                            class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                            <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                            </svg>
-                            <span class="sr-only">WhatsApp</span>
-                        </a>
-                        <!-- Instagram -->
-                        <a href="https://instagram.com/ton-lien" target="_blank" rel="noopener noreferrer"
-                            class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                            <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                            </svg>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                        <!-- LinkedIn -->
-                        <a href="https://linkedin.com/in/ton-lien" target="_blank" rel="noopener noreferrer"
-                            class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                            <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </nav>
-
-                    <p class="text-sm sm:text-xs lg:text-sm text-gray-500 max-w-xs leading-relaxed font-Poppins">
-                        Ensemble, nous pouvons réveiller le Génie qui dort en chaque enfant. <br>
-                        <span class="text-[#3A3DFF] font-medium cursor-pointer">"Approche innovative de l'Institut
-                            Dé-connecté"</span>
-                    </p>
-                </aside>
-
-                <!-- Liens utiles -->
-                <nav class="space-y-3 sm:space-y-4 font-Jost">
-                    <h3 class="font-bold text-gray-900 uppercase text-sm sm:text-base lg:text-lg tracking-widest ">Liens
-                        utiles</h3>
-                    <ul class="space-y-2 sm:space-y-3 text-black text-sm font-Poppins">
-                        <li><a href="../index.html" class="hover:text-[#3A3DFF] transition-colors">Accueil</a></li>
-                        <li><a href="../a-propos/index.html" class="hover:text-[#3A3DFF] transition-colors">A propos</a></li>
-                        <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Nos ateliers</a></li>
-                        <li><a href="../contact/index.html" class="hover:text-[#3A3DFF] transition-colors">Contact</a></li>
-                    </ul>
+                <nav class="flex gap-4 sm:gap-5 items-center flex-wrap" aria-label="Réseaux sociaux">
+                    <!-- Facebook -->
+                    <a href="https://web.facebook.com/profile.php?id=61579571357584" target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                        <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/261347799424" target="_blank" rel="noopener noreferrer"
+                        class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                        <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        <span class="sr-only">WhatsApp</span>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.linkedin.com/company/institut-d%C3%A9-connect%C3%A9/?viewAsMember=true"
+                        target="_blank" rel="noopener noreferrer"
+                        class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                        <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.instagram.com/deconnecte2026/" target="_blank" rel="noopener noreferrer"
+                        class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                        <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
                 </nav>
 
-                <!-- CTA Footer -->
-                <article class="space-y-4 sm:space-y-6">
-                    <h3
-                        class="text-base font-medium font-Poppins text-[#1E1E1E] leading-tight font-Poppins">
-                        Offrez à votre enfant les clés de sa réussite numérique. Réservez sa place pour la prochaine
-                        session et retrouvez la sérénité à la maison.
-                    </h3>
-                    <hr class="border-black w-full sm:w-64 md:w-72 lg:w-96">
-                    <div class="flex justify-start sm:justify-end">
-                        <a href="#inscription"
-                            class="bg-gradient-to-r from-[#FF9447] to-[#FFE100] text-white font-semibold text-base py-3 px-8 sm:px-12 rounded-2xl shadow-lg hover:shadow-xl hover:brightness-110 transition-all transform hover:-translate-y-1 inline-block">
-                            Inscrivez-vous
-                        </a>
-                    </div>
-                    <p class="text-xs sm:text-sm text-gray-500 font-medium font-Poppins">
-                        Les places sont limitées pour garantir un suivi de qualité
-                    </p>
-                </article>
-            </div>
+                <p class="text-sm sm:text-xs lg:text-sm text-gray-500 max-w-xs leading-relaxed font-Poppins">
+                    Ensemble, nous pouvons réveiller le Génie qui dort en chaque enfant. <br>
+                    <span class="text-[#3A3DFF] font-medium cursor-pointer">"Approche innovative de l'Institut
+                        Dé-connecté"</span>
+                </p>
+            </aside>
 
-            <!-- Adresse -->
-            <div class="container mx-auto mt-4 sm:mt-6 pt-6 sm:pt-8 border-t border-gray-100">
-                <div class="flex items-center gap-2 text-black text-sm sm:text-base lg:text-lg">
-                    <svg class="h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                    </svg>
-                    <span class="font-light">Antananarivo - Madagascar</span>
+            <!-- Liens utiles -->
+            <nav class="space-y-3 sm:space-y-4 font-Jost">
+                <h3 class="font-bold text-gray-900 uppercase text-sm sm:text-base lg:text-lg tracking-widest ">Liens
+                    utiles</h3>
+                <ul class="space-y-2 sm:space-y-3 text-black text-sm font-Poppins">
+                    <li><a href="../index.html" class="hover:text-[#3A3DFF] transition-colors">Accueil</a></li>
+                    <li><a href="../a-propos/index.html" class="hover:text-[#3A3DFF] transition-colors">A propos</a>
+                    </li>
+                    <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">Nos ateliers</a></li>
+                    <li><a href="../contact/index.html" class="hover:text-[#3A3DFF] transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- CTA Footer -->
+            <article class="space-y-4 sm:space-y-6">
+                <h3 class="text-base font-medium font-Poppins text-[#1E1E1E] leading-tight font-Poppins">
+                    Offrez à votre enfant les clés de sa réussite numérique. Réservez sa place pour la prochaine
+                    session et retrouvez la sérénité à la maison.
+                </h3>
+                <hr class="border-black w-full sm:w-64 md:w-72 lg:w-96">
+                <div class="flex justify-start sm:justify-end">
+                    <a href="#inscription"
+                        class="bg-gradient-to-r from-[#FF9447] to-[#FFE100] text-white font-semibold text-base py-3 px-8 sm:px-12 rounded-2xl shadow-lg hover:shadow-xl hover:brightness-110 transition-all transform hover:-translate-y-1 inline-block">
+                        Inscrivez-vous
+                    </a>
                 </div>
+                <p class="text-xs sm:text-sm text-gray-500 font-medium font-Poppins">
+                    Les places sont limitées pour garantir un suivi de qualité
+                </p>
+            </article>
+        </div>
+
+        <!-- Adresse -->
+        <div class="container mx-auto mt-4 sm:mt-6 pt-6 sm:pt-8 border-t border-gray-100">
+            <div class="flex items-center gap-2 text-black text-sm sm:text-base lg:text-lg">
+                <svg class="h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+                <span class="font-light">Antananarivo - Madagascar</span>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <script>
         const track = document.getElementById('carousel-track');
@@ -902,6 +857,59 @@
             clearInterval(autoPlay);
             autoPlay = setInterval(() => go(1), 3000);
         });
+    </script>
+
+    <script>
+
+        let form = document.querySelector("#inscription_form");
+        let form_submit = form.querySelector("#submit_inscription");
+
+        form_submit.addEventListener("click", function (event) {
+            event.preventDefault();
+            let nom_responsable = form.querySelector("[name=nom_responsable]").value;
+            let adresse_email = form.querySelector("[name=adresse_email]").value;
+            let telephone = form.querySelector("[name=telephone]").value;
+            let nom_enfant = form.querySelector("[name=nom_enfant]").value;
+            let age = form.querySelector("[name=age]").value;
+            let classe = form.querySelector("[name=classe]").value;
+            if (
+                nom_responsable == "" ||
+                adresse_email == "" ||
+                telephone == "" ||
+                nom_enfant == "" ||
+                age == "" ||
+                classe == ""
+            ) {
+                alert("Veuillez Complétez tous les champs")
+            }
+            else {
+                inputs = form.querySelectorAll("[name]");
+                params = [];
+                inputs.forEach(input => {
+                    params.push(encodeURIComponent(input.name) + "=" + encodeURIComponent(input.value));
+                });
+                body = params.join("&");
+                fetch('https://deconnecte.com/email.php', {
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: body
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        alert(data.message);
+                        if (data.status == 1) {
+                            window.location.reload();
+                        }
+                    });
+            }
+
+
+        });
+
+
+
     </script>
 </body>
 
