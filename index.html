@@ -11,6 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -81,7 +82,20 @@
         .text-transparent {
             -webkit-text-fill-color: transparent;
         }
+        .spin360 {
+            animation: rotate360 5s linear infinite; /* 5s = durée, infinite = boucle infinie */
+        }
+
+        @keyframes rotate360 {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
+
     <!-- <link rel="stylesheet" href="main.css"> -->
     <script type="application/ld+json">
 {
@@ -190,7 +204,8 @@
                 <span
                     class="md:border-[6px] block md:border-white md:pl-16 lg:pl-24 p-3 md:bg-white md:rounded-tr-3xl flex flex-col md:flex-row items-center justify-center gap-4 w-full md:w-fit">
                     <a href="#"
-                        class="hero-btn group bg-gradient-to-r from-[#FF9447] to-[#FFD902] text-white text-base sm:text-lg md:text-sm font-Poppins font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-2xl transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-3 whitespace-nowrap w-fit mx-auto md:mx-0">
+                        class="hero-btn group bg-gradient-to-r from-[#FF9447] to-[#FFD902] text-white text-base sm:text-lg md:text-sm font-Poppins font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-2xl 
+                        transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-3 whitespace-nowrap w-fit mx-auto md:mx-0" >
                         Découvrir les ateliers
                         <svg class="arrow-icon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -204,7 +219,7 @@
                     </a>
                 </span>
 
-                <aside class="hidden md:flex gap-8 lg:gap-12 text-white ml-[35%] lg:ml-[40%] -mt-14">
+                <aside class="hidden md:flex gap-8 lg:gap-12 text-white ml-[35%] lg:ml-[40%] -mt-14" data-aos="fade-up" data-aos-duration="1000">
                     <span class="block">
                         <strong class="text-4xl md:text-5xl lg:text-6xl block font-Poppins font-bold">+500</strong>
                         <small
@@ -226,16 +241,16 @@
 
             <!-- Contenu Hero -->
             <section class="container mx-auto px-4 sm:px-6 relative z-10 min-h-screen flex items-center pb-32 md:pb-14">
-                <article class="max-w-xs sm:max-w-xl md:max-w-3xl text-white">
+                <article class="max-w-xs sm:max-w-xl md:max-w-3xl text-white" >
                     <h1
-                        class="text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-Jost font-normal mb-6 sm:mb-8 drop-shadow-md">
+                        class="text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-Jost font-normal mb-6 sm:mb-8 drop-shadow-md" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="50">
                         Libérez le vrai <br>
                         potentiel de votre
                         enfant
                     </h1>
                     <p
-                        class="text-base sm:text-xl md:text-xl opacity-100 max-w-xs sm:max-w-sm md:max-w-xl font-Jost leading-relaxed">
-                        Aidez votre enfant (de 5 à 15 ans) à maîtriser son temps d'écran, à retrouver sa concentration
+                        class="text-base sm:text-xl md:text-xl opacity-100 max-w-xs sm:max-w-sm md:max-w-xl font-Jost leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
+                        Aidez votre enfant (de 8 à 15 ans) à maîtriser son temps d'écran, à retrouver sa concentration
                         et à libérer son plein potentiel grâce à une approche basée sur les neurosciences.
                     </p>
                 </article>
@@ -249,10 +264,10 @@
         <section class="relative pt-10 pb-20 bg-[#D9D9D9]/50 z-0 w-full overflow-hidden flex items-center">
             <div class="container mx-auto px-4 sm:px-6">
 
-                <header class="text-center max-w-5xl mx-auto mb-10 sm:mb-14">
+                <header class="text-center max-w-5xl mx-auto mb-10 sm:mb-14" data-aos="fade-up" data-aos-duration="1000">
                     <h2
                         class="text-2xl sm:text-3xl md:text-3xl font-medium font-Poppins  tracking-tighter leading-tight bg-gradient-to-r from-[#FF9447] via-[#321D0E] to-[#000000] bg-clip-text text-transparent">
-                        Fatique oculaire, ISOLEMENT, Maux de Tête fréquent, baisse des performances scolaires... <br>
+                        Fatigue oculaire, ISOLEMENT, Maux de Tête fréquent, baisse des performances scolaires... <br>
                         <span class="text-[#000000] font-normal font-Poppins">Vous reconnaissez ces signes ?</span>
                     </h2>
                 </header>
@@ -261,14 +276,14 @@
                 <article class="grid md:grid-cols-2 gap-6 sm:gap-16 items-center mb-10 md:mb-4">
                     <p
                         class="relative pb-8 text-lg sm:text-xl md:text-xl leading-relaxed font-medium text-black font-Poppins
-                       after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-48 sm:after:w-64 after:bg-black">
+                       after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-48 sm:after:w-64 after:bg-black" data-aos="fade-right" data-aos-duration="1000">
                         Il est biologiquement <strong class="text-[#3A3DFF] font-medium">difficile</strong> pour un
                         adolescent de s'arrêter seul. Pourquoi ? Parce que le cortex préfrontal
                         <span class="text-gray-500 font-medium font-Poppins">(la zone du cerveau qui contrôle les
                             impulsions et prend les décisions)</span>
                         est le dernier à arriver à maturité, autour de 25 ans !
                     </p>
-                    <figure class="hidden md:flex md:justify-center">
+                    <figure class="hidden md:flex md:justify-center" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="assets/image 349.png" alt="Enfants sur smartphones"
                             class="rounded-full w-64 h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-cover shadow-xl">
                     </figure>
@@ -276,13 +291,13 @@
 
                 <!-- Ligne 2 -->
                 <article class="grid md:grid-cols-2 gap-6 sm:gap-16 items-center">
-                    <figure class="hidden md:flex md:justify-center md:order-1">
+                    <figure class="hidden md:flex md:justify-center md:order-1" data-aos="zoom-out" data-aos-duration="1000">
                         <img src="assets/young-boy-kid-using-mobile 1.jpg" alt="Frustration enfant écran"
                             class="rounded-full w-64 h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-cover shadow-xl">
                     </figure>
                     <aside class="md:order-2">
                         <p
-                            class="text-base sm:text-xl md:text-xl text-left md:text-right leading-relaxed text-black font-medium font-Poppins">
+                            class="text-base sm:text-xl md:text-xl text-left md:text-right leading-relaxed text-black font-medium font-Poppins" data-aos="fade-left" data-aos-duration="1000">
                             L'écran est devenu la seule <span class="text-[#FF9447] font-medium">source de détente de
                                 votre enfant</span> ?
                             <strong class="text-gray-500 font-medium">Lui demander d'éteindre sa tablette provoque de
@@ -303,15 +318,16 @@
 
             <header class="text-center mb-10 sm:mb-16 px-4 sm:px-6 ">
                 <h2
-                    class="text-2xl sm:text-4xl md:text-5xl font-Regular font-Poppins mb-4 sm:mb-5 bg-gradient-to-r from-[#000000] to-[#3A3DFF] bg-clip-text text-transparent">
+                    class="text-2xl sm:text-4xl md:text-5xl font-Regular font-Poppins 
+                    mb-4 sm:mb-5 bg-gradient-to-r from-[#000000] to-[#3A3DFF] bg-clip-text text-transparent" data-aos="fade-down" data-aos-duration="1000">
                     Bonne nouvelle : le cerveau peut changer
                 </h2>
-                <p class="text-base sm:text-xl text-black font-medium font-Poppins">
+                <p class="text-base sm:text-xl text-black font-medium font-Poppins" data-aos="fade-up" data-aos-duration="1000">
                     De la distraction au "Cerveau Actif"
                 </p>
             </header>
 
-            <article class="container mx-auto px-0 sm:px-4 md:px-6">
+            <article class="container mx-auto px-0 sm:px-4 md:px-6" data-aos="fade-zoom-in" data-aos-duration="1000">
                 <figure
                     class="relative h-[300px] sm:h-[440px] md:h-[560px] lg:h-[600px] overflow-hidden md:rounded-[10px] shadow-2xl">
                     <img src="assets/Frame 95626.png" alt="Épanouissement enfant"
@@ -349,17 +365,14 @@
 
                 <header
                     class="mb-10 sm:mb-16 flex justify-between items-end border-l-8 pl-4 sm:pl-8 pt-6 sm:pt-8 pr-4 sm:pr-16 md:pr-20 border-[#FF9447] pb-1">
-                    <aside>
+                    <aside class="max-w-2xl" data-aos="fade-right" data-aos-duration="1000">
                         <h2 class="text-6xl sm:text-4xl md:text-6xl font-light font-Jost leading-none">Temoignages</h2>
                         <p class="text-sm sm:text-lg mt-2 font-light font-Jost">
                             <span class="text-[#3A3DFF] font-medium font-Jost">+500 clients</span> nous font confiance
                         </p>
                     </aside>
                     <div class="hidden md:flex h-[70px] lg:h-[90px] items-center">
-                        <svg viewBox="0 0 80 80" class="h-full w-auto" xmlns="http://www.w3.org/2000/svg">
-                            <polygon points="40,5 49,30 76,30 54,48 62,74 40,57 18,74 26,48 4,30 31,30"
-                                fill="#3A3DFF" />
-                        </svg>
+                        <img src="assets/Star 1.png" alt="Étoile décorative" class="h-full w-auto spin360">
                     </div>
                 </header>
 
@@ -367,7 +380,7 @@
 
                     <!-- Témoignage 1 -->
                     <li
-                        class="temoignage flex flex-col sm:flex-row gap-4 sm:gap-8 items-start p-4 sm:p-8 border-b-1 border-gray-300 hover:bg-orange-50 transition-colors">
+                        class="temoignage flex flex-col sm:flex-row gap-4 sm:gap-8 items-start p-4 sm:p-8 border-b-1 border-gray-300 hover:bg-orange-50 transition-colors" data-aos="fade-up" data-aos-duration="1000">
                         <img src="assets/Ellipse 5.png" alt="Portrait Directeur"
                             class="temo-img-r w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full object-cover shadow-lg flex-shrink-0">
                         <article class="flex-1">
@@ -388,7 +401,7 @@
 
                     <!-- Témoignage 2 -->
                     <li
-                        class="temoignage flex flex-col sm:flex-row gap-4 sm:gap-8 items-start p-4 sm:p-8 border-b-1 border-gray-300 hover:bg-orange-50 transition-colors">
+                        class="temoignage flex flex-col sm:flex-row gap-4 sm:gap-8 items-start p-4 sm:p-8 border-b-1 border-gray-300 hover:bg-orange-50 transition-colors" data-aos="fade-up" data-aos-duration="2000">
                         <img src="assets/Ellipse 6.png" alt="Portrait Fitahiana"
                             class="temo-img-r w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full object-cover shadow-lg flex-shrink-0">
                         <article class="flex-1">
@@ -407,7 +420,7 @@
 
                     <!-- Témoignage 3 -->
                     <li
-                        class="temoignage flex flex-col sm:flex-row gap-4 sm:gap-8 items-start p-4 sm:p-8 border-b-1 border-gray-300 hover:bg-indigo-50 transition-colors mb-16 sm:mb-32">
+                        class="temoignage flex flex-col sm:flex-row gap-4 sm:gap-8 items-start p-4 sm:p-8 border-b-1 border-gray-300 hover:bg-indigo-50 transition-colors mb-16 sm:mb-32" data-aos="fade-up" data-aos-duration="3000">
                         <img src="assets/Ellipse 7.png" alt="Portrait Elena"
                             class="temo-img-l w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full object-cover shadow-lg flex-shrink-0">
                         <article class="flex-1">
@@ -439,39 +452,39 @@
 
                     <!-- Texte gauche -->
                     <div>
-                        <h2 class="text-2xl sm:text-3xl md:text-4xl font-Poppins uppercase mb-6 sm:mb-8 leading-tight">
+                        <h2 class="text-2xl sm:text-3xl md:text-4xl font-Poppins uppercase mb-6 sm:mb-8 leading-tight" data-aos="fade-zoom-in" data-aos-duration="1000">
                             COMMENCER DES AUJOURD'HUI !!
                         </h2>
 
                         <p
-                            class="text-base sm:text-lg text-white/50 font-Poppins mb-6 sm:mb-8 opacity-90 leading-relaxed">
+                            class="text-base sm:text-lg text-white/50 font-Poppins mb-6 sm:mb-8 opacity-90 leading-relaxed" data-aos="fade-zoom-in" data-aos-duration="1500">
                             La réussite de nos enfants est un travail d'équipe. Téléchargez gratuitement notre outil
                             "Charte Familiale : Cerveau en pleine forme !" et découvrez comment mettre en place des
                             rituels simples :
                         </p>
 
                         <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-12 opacity-90 ">
-                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
+                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins" data-aos="fade-right" data-aos-duration="500">
                                 <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
                                 Créer des "Zones de paix" (0 écran).
                             </li>
-                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
+                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins" data-aos="fade-right" data-aos-duration="600">
                                 <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
                                 Instaurer le couvre-feu numérique pour un meilleur sommeil.
                             </li>
-                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins">
+                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins" data-aos="fade-right" data-aos-duration="800">
                                 <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
                                 Le "Défi des parents" pour montrer l'exemple.
                             </li>
                         </ul>
 
                         <a href="./Charte-familiale.pdf"
-                            class="inline-block bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base"
+                            class="inline-block bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base" data-aos="fade-up" data-aos-duration="1000"
                             download="Charte-familiale.pdf">
                             Recevoir une charte familiale gratuite
                         </a>
 
-                        <div class="flex gap-10 sm:gap-16">
+                        <div class="flex gap-10 sm:gap-16" data-aos="fade-up" data-aos-duration="1000">
                             <div>
                                 <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">+500</div>
                                 <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Clients
@@ -486,10 +499,10 @@
                     </div>
 
                     <!-- Formulaire -->
-                    <div class="w-full font-medium font-Poppins">
+                    <div class="w-full font-medium font-Poppins" data-aos="fade-zoom-out" data-aos-duration="3000">
                         <form class="space-y-6 sm:space-y-8" id="inscription_form">
                             <div>
-                                <input type="text" placeholder="Nom de parents ou responsable :" name="nom_responsable"
+                                <input type="text" placeholder="Nom de parents ou responsable" name="nom_responsable"
                                     class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
                             </div>
                             <div>
@@ -501,7 +514,7 @@
                                     class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
                             </div>
                             <div>
-                                <input type="text" placeholder="Nom de l'enfant :" name="nom_enfant"
+                                <input type="text" placeholder="Nom de l'enfant" name="nom_enfant"
                                     class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
                             </div>
                             <div class="grid grid-cols-2 gap-4 sm:gap-8">
@@ -535,7 +548,7 @@
             <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 items-start">
 
                 <!-- Brand -->
-                <aside class="space-y-5 sm:space-y-6">
+                <aside class="space-y-5 sm:space-y-6" data-aos="fade-right" data-aos-duration="1000">
                     <div class="block w-48">
                         <img src="assets/Logo_texted.png" class="block object-fit" alt="">
                     </div>
@@ -589,7 +602,7 @@
                 </aside>
 
                 <!-- Liens utiles -->
-                <nav class="space-y-3 sm:space-y-4 font-Jost">
+                <nav class="space-y-3 sm:space-y-4 font-Jost" data-aos="fade-up" data-aos-duration="1000">
                     <h3 class="font-bold text-gray-900 uppercase text-sm sm:text-base lg:text-lg tracking-widest ">Liens
                         utiles</h3>
                     <ul class="space-y-2 sm:space-y-3 text-black text-sm font-Poppins">
@@ -603,7 +616,7 @@
                 </nav>
 
                 <!-- CTA Footer -->
-                <article class="space-y-4 sm:space-y-6">
+                <article class="space-y-4 sm:space-y-6" data-aos="fade-zoom-in" data-aos-duration="2000">
                     <h3 class="text-base font-medium font-Poppins text-[#1E1E1E] leading-tight font-Poppins">
                         Offrez à votre enfant les clés de sa réussite numérique. Réservez sa place pour la prochaine
                         session et retrouvez la sérénité à la maison.
@@ -622,23 +635,25 @@
             </div>
 
             <!-- Adresse -->
-            <div class="container mx-auto mt-4 sm:mt-6 pt-6 sm:pt-8 border-t border-gray-100">
+            <div class="container mx-auto mt-4 sm:mt-6 pt-6 sm:pt-8 border-t border-gray-100" >
                 <div class="flex items-center gap-2 text-black text-sm sm:text-base lg:text-lg">
                     <svg class="h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path
                             d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                     </svg>
-                    <span class="font-light">Antananarivo - Madagascar</span>
+                    <span class="font-light text-sm">Antananarivo - Madagascar</span>
                 </div>
             </div>
         </footer>
 
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="anim.js"></script>
     <script>
         header = document.querySelector("header");
         marker_header = document.querySelector("#section_hero");
         menu = header.querySelector("#mobile-menu").children;
-        nav = document.querySelector("#nav");
+        nav = document.querySelector("#nav");  
 
         //// HEADER CHANGÉ À L'ORIGINAL
         let observer_hero_shown = new IntersectionObserver(
@@ -721,13 +736,8 @@
 
         });
 
-
-
     </script>
 
-
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html> 
