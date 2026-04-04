@@ -221,14 +221,21 @@
 
                 <aside class="hidden md:flex gap-8 lg:gap-12 text-white ml-[35%] lg:ml-[40%] -mt-14" data-aos="fade-up" data-aos-duration="1000">
                     <span class="block">
-                        <strong class="text-4xl md:text-5xl lg:text-6xl block font-Poppins font-bold">+500</strong>
-                        <small
-                            class="text-base lg:text-xl ml-4 lg:ml-8 tracking-widest opacity-80 font-bold font-Poppins">Clients</small>
+                        <strong 
+                            class="text-4xl md:text-5xl lg:text-6xl block font-Poppins font-bold counter" 
+                            data-target="500">0</strong>
+                        <small class="text-base lg:text-xl ml-4 lg:ml-8 tracking-widest opacity-80 font-bold font-Poppins">
+                            Clients
+                        </small>
                     </span>
+
                     <span class="block">
-                        <strong class="text-4xl md:text-5xl lg:text-6xl block font-Poppins font-bold">100%</strong>
-                        <small
-                            class="text-base lg:text-xl ml-4 lg:ml-8 tracking-widest opacity-80 font-bold font-Poppins">Confiance</small>
+                        <strong 
+                            class="text-4xl md:text-5xl lg:text-6xl block font-Poppins font-bold counter" 
+                            data-target="100">0</strong>
+                        <small class="text-base lg:text-xl ml-4 lg:ml-8 tracking-widest opacity-80 font-bold font-Poppins">
+                            Confiance
+                        </small>
                     </span>
                 </aside>
             </nav>
@@ -737,6 +744,57 @@
         });
 
     </script>
+    <script>
+const counters = document.querySelectorAll('.counter');
+
+const animateCounters = () => {
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+
+        const increment = target / 100;
+
+        const updateCount = () => {
+            if (count < target) {
+                count += increment;
+
+                // Ajout du + ou %
+                if (target === 100) {
+                    counter.innerText = Math.ceil(count) + "%";
+                } else {
+                    counter.innerText = "+" + Math.ceil(count);
+                }
+
+                setTimeout(updateCount, 20);
+            } else {
+                // Valeur finale exacte
+                if (target === 100) {
+                    counter.innerText = "100%";
+                } else {
+                    counter.innerText = "+" + target;
+                }
+            }
+        };
+
+        updateCount();
+    });
+};
+
+// Animation au scroll (propre)
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCounters();
+            observer.disconnect(); // une seule fois
+        }
+    });
+});
+
+const section = document.querySelector('aside');
+if (section) {
+    observer.observe(section);
+}
+</script>
 
 </body>
 
