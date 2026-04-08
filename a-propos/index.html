@@ -34,6 +34,7 @@
         .font-roboto {
             font-family: "Roboto", sans-serif;
         }
+
         .bg-clip-text {
             -webkit-background-clip: text;
             background-clip: text;
@@ -42,14 +43,17 @@
         .text-transparent {
             -webkit-text-fill-color: transparent;
         }
+
         .spin360 {
-            animation: rotate360 5s linear infinite; /* 5s = durée, infinite = boucle infinie */
+            animation: rotate360 5s linear infinite;
+            /* 5s = durée, infinite = boucle infinie */
         }
 
         @keyframes rotate360 {
             from {
                 transform: rotate(0deg);
             }
+
             to {
                 transform: rotate(360deg);
             }
@@ -132,8 +136,8 @@
                 class=" p-2 hidden group-has-checked:flex flex-col sm:flex-row sm:flex items-center gap-4 lg:gap-8 justify-center ">
                 <li><a href=".." class="hover:text-[#FF9447] transition-colors ">Accueil</a>
                 </li>
-                <li><a href="../a-propos"
-                        class="text-[#FF9447] underline underline-offset-8 transition-colors ">A propos</a></li>
+                <li><a href="../a-propos" class="text-[#FF9447] underline underline-offset-8 transition-colors ">A
+                        propos</a></li>
                 <li><a href="../ateliers" class="hover:text-[#FF9447] transition-colors">Nos ateliers</a>
                 </li>
                 <li><a href="../a-propos#blog" class="hover:text-[#FF9447] transition-colors">Blog</a></li>
@@ -169,7 +173,7 @@
                 <span>NOTRE MISSION</span>
             </h1>
             <h2
-                class=" relative block text-sm md:text-base lg:text-xl font-poppins text-[rgba(0,0,0,0.42)] font-semibold py-2" >
+                class=" relative block text-sm md:text-base lg:text-xl font-poppins text-[rgba(0,0,0,0.42)] font-semibold py-2">
                 Réveiller le potentiel des enfants dans un monde dominé
                 <em class="text-[#FF9447]">par les écrans</em>
                 <div
@@ -195,8 +199,8 @@
     </section>
 
     <section>
-        <h1
-            class="block text-center text-2xl sm:text-3xl lg:text-4xl font-roboto font-medium py-12 text[rgb(24,25,27)]" data-aos="fade-down" data-aos-duration="1500">
+        <h1 class="block text-center text-2xl sm:text-3xl lg:text-4xl font-roboto font-medium py-12 text[rgb(24,25,27)]"
+            data-aos="fade-down" data-aos-duration="1500">
             NOTRE
             <em
                 class="text-[rgba(24,25,27,0.9)] bg-[rgba(255,148,71,0.40)] pl-1 pr-8 border-r-3 border-r-[rgb(255,148,71)]">HISTOIRE
@@ -213,9 +217,11 @@
                 <h2 class="relative block text-xl sm:text-3xl lg:text-4xl  ">
                     <div class="flex items-center gap-2">
                         <span class="bg-clip-text text-transparent bg-linear-to-r from-white to-[#0A7CFF]">
-                            Le drame de Léo et
+                            Le drame de Léo et<span>
+                                l’éveil d’une mission
+                            </span>
                         </span>
-                        <svg class="size-10 text-black spin360" viewBox="0 0 85 98" fill="none"
+                        <svg class="size-10 text-black spin360 max-sm:hidden" viewBox="0 0 85 98" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M42.4355 0L51.7937 32.7912L84.8708 24.5L61.1519 49L84.8708 73.5L51.7937 65.2088L42.4355 98L33.0774 65.2088L0.000301361 73.5L23.7192 49L0.000301361 24.5L33.0774 32.7912L42.4355 0Z"
@@ -231,14 +237,14 @@
 
                     </div>
                     <div
-                        class="block w-fit pl-4 sm:pl-8 bg-clip-text text-transparent bg-linear-to-r from-white to-[#0A7CFF]">
+                        class="block w-fit pl-4 sm:pl-8 bg-clip-text text-transparent bg-linear-to-r from-white to-[#0A7CFF] hidden">
                         <div class="flex items-center gap-2">
                             <svg class="size-5" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_925_506)">
                                     <path
                                         d="M17.5 8.5767L14.0216 0L14.0816 9.25813L7.59253 2.66699L11.1909 11.185L2.66278 7.58979L9.25978 14.0869L0 14.0164L8.57608 17.4942L0 20.9835L9.25978 20.9131L2.66278 27.4102L11.1909 23.8033L7.59253 32.3329L14.0816 25.7418L14.0216 34.9999L17.5 26.4233L20.9784 34.9999L20.9184 25.7418L27.4075 32.3329L23.8091 23.8033L32.3373 27.4102L25.7403 20.9131L35 20.9835L26.4239 17.4942L35 14.0164L25.7403 14.0869L32.3373 7.58979L23.8091 11.185L27.4075 2.66699L20.9184 9.25813L20.9784 0L17.5 8.5767Z"
                                         fill="white" />
-                                </g> 
+                                </g>
                                 <defs>
                                     <clipPath id="clip0_925_506">
                                         <rect width="35" height="35" fill="white" />
@@ -246,7 +252,6 @@
                                 </defs>
                             </svg>
                             <span>
-
                                 l’éveil d’une mission
                             </span>
                         </div>
@@ -254,32 +259,36 @@
                 </h2>
                 <p class=" py-8 text-xs sm:text-sm leading-8 text-balance font-light">
                     Léo, 11 ans, s'est emmuré dans sa chambre, délaissant ses proches pour le reflet bleuté d'une
-                    tablette. Ce retrait n'était pas une simple crise d'adolescence, mais le début d'<strong
+                    tablette.
+                    <br />
+                    Ce retrait n'était pas une simple crise d'adolescence, mais le début d'<strong
                         class="font-medium">un véritable
                         piratage neurologique</strong>. Derrière sa porte close, son cerveau en plein développement
                     subissait une
-                    altération profonde, capturé par des algorithmes prédateurs. À l'insu de tous, <strong
-                        class="font-medium">il s'était laissé
-                        hypnotiser par une série en ligne macabre</strong>, conçue comme un piège psychologique. Épisode
-                    après
-                    épisode, cette chaîne toxique a manipulé ses émotions les plus fragiles, transformant ses doutes
+                    altération profonde, capturé par des algorithmes prédateurs.
+                    <br />
+                    <br />
+                    À l'insu de tous, <strong class="font-medium">il s'était laissé
+                        hypnotiser par une série en ligne macabre</strong>, conçue comme un piège psychologique.
+                    <br />
+                    Épisode après épisode, cette chaîne toxique a manipulé ses émotions les plus fragiles, transformant
+                    ses doutes
                     d'enfant en une détresse insurmontable. Le virtuel a fini par dicter sa loi au réel.
                     <span class="hidden group-has-checked:block">
-                        À l'insu de tous, il s'était laissé hypnotiser par une série en ligne macabre, conçue comme un
-                        piège psychologique. Épisode après épisode, cette chaîne toxique a manipulé ses émotions les
-                        plus fragiles, transformant ses doutes d'enfant en une détresse insurmontable. Le virtuel a fini
-                        par dicter sa loi au réel.
-
+                        <br />
+                        <br />
                         Le drame a éclaté un matin : Léo a commis l'irréparable. L'enquête policière a révélé l'horreur
                         dans l'historique de ses appareils : il avait suivi un véritable script d'autodestruction. Léo
                         n'a pas choisi de mourir ; sa volonté a été méthodiquement siphonnée par une machine numérique
                         criminelle.
-
+                        <br />
+                        <br />
                         En tant que médecin spécialiste en santé publique, ce cas m’a été un électrochoc. Il m'a rappelé
                         une vérité vitale : mieux vaut prévenir que guérir. Une fois l'addiction ancrée ou le geste
                         commis, la médecine est souvent démunie. Il est urgent de protéger la plasticité cérébrale de
                         nos enfants contre cette épidémie silencieuse.
-
+                        <br />
+                        <br />
                         De cette douleur et de cette urgence sanitaire est né l’Institut Dé-connecté. Notre mission est
                         de restaurer l'équilibre entre technologie et besoins vitaux du cerveau. En honorant la mémoire
                         de Léo, nous redonnons aux enfants les outils pour protéger leur esprit et retrouver leur
@@ -314,13 +323,14 @@
     </section>
 
     <section class="relative py-3 sm:py-12 lg:py-12 font-poppins">
-        <h1
-            class="block text-center text-3xl sm:text-4xl lg:text-5xl text-transparent font-medium bg-linear-to-r from-black to-[#FF9447] bg-clip-text" data-aos="fade-zoom-out" data-aos-duration="1500">
+        <h1 class="block text-center text-3xl sm:text-4xl lg:text-5xl text-transparent font-medium bg-linear-to-r from-black to-[#FF9447] bg-clip-text"
+            data-aos="fade-zoom-out" data-aos-duration="1500">
             Nos Valeurs<br />Fondamentales
         </h1>
 
         <div class="flex justify-center gap-8 py-12 font-inter flex-wrap gap-y-2">
-            <div class="w-[96%] sm:w-[40%] lg:w-[25%] rounded-xl bg-[#F0F0F0] p-8" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-[96%] sm:w-[40%] lg:w-[25%] rounded-xl bg-[#F0F0F0] p-8" data-aos="fade-up"
+                data-aos-duration="1000">
                 <div class="pb-5 sm:pb-20">
                     <div class="p-2 text-2xl bg-[#5846FB] rounded-full w-fit text-white">
                         <i class="block align-middle bx bx-handshake"></i>
@@ -335,7 +345,8 @@
                 </p>
             </div>
 
-            <div class="w-[96%] sm:w-[48%] lg:w-[25%] rounded-xl bg-[#F0F0F0] p-8" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <div class="w-[96%] sm:w-[48%] lg:w-[25%] rounded-xl bg-[#F0F0F0] p-8" data-aos="fade-up"
+                data-aos-duration="1500" data-aos-delay="500">
                 <div class="pb-5 sm:pb-20">
                     <div class="p-2 text-2xl bg-[#5846FB] rounded-full w-fit text-white">
                         <i class="block align-middle bx bx-thunder"></i>
@@ -351,7 +362,8 @@
                 </p>
             </div>
 
-            <div class="w-[96%] sm:w-[48%] lg:w-[25%] rounded-xl bg-[#F0F0F0] p-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500" data-aos-delay="900">
+            <div class="w-[96%] sm:w-[48%] lg:w-[25%] rounded-xl bg-[#F0F0F0] p-8" data-aos="fade-up"
+                data-aos-duration="1000" data-aos-delay="1500" data-aos-delay="900">
                 <div class="pb-5 sm:pb-20">
                     <div class="p-2 text-2xl bg-[#5846FB] rounded-full w-fit text-white">
                         <i class="block align-middle bx bx-seal-check"></i>
@@ -378,35 +390,38 @@
         </div>
     </section>
 
-    <section class="p-6 sm:p-12 lg:p-24">
-        <h1 class="block text-3xl sm:text-4xl lg:text-5xl font-poppins text-black text-center" data-aos="zoom-in" data-aos-duration="1500">
+    <section class="p-6 sm:p-4 lg:p-24 ">
+        <h1 class="block text-3xl sm:text-4xl lg:text-5xl font-poppins text-black text-center" data-aos="zoom-in"
+            data-aos-duration="1500">
             NOS FO<span class="bg-[#D7EEDD] rounded-full px-1">NDATEURS</span>
         </h1>
 
 
         <div class="py-8"></div>
 
-        <h2
-            class="text-xl p-3  sm:text-2xl lg:text-3xl border-l-4 border-l-[rgb(255,148,71)] font-semibold font-poppins" data-aos="fade-right" data-aos-duration="1500">
+        <h2 class="text-xl p-3  sm:text-2xl lg:text-3xl border-l-4 border-l-[rgb(255,148,71)] font-semibold font-poppins"
+            data-aos="fade-right" data-aos-duration="1500">
             Une expertise médicale au<br>
             service de l'éducation
         </h2>
 
 
 
-        <div class="flex gap-2 py-8 flex-col sm:flex-row text-white text-sm md:text-base">
+        <div
+            class="flex justify-center mx-auto w-full sm:w-21/24 md:w-18/24 gap-4 py-8 flex-col sm:flex-row text-white text-sm md:text-base ">
 
 
-            <div class=" relative grow rounded-xl overflow-hidden font-poppins" data-aos="fade-zoom-in" data-aos-duration="2000">
-                <img class="w-full h-full object-cover rounded-xl" src="./images/Rabesoa.png">
-                <div class="absolute bottom-0 left-0 w-full bg-[rgba(0,0,0,0.89)] p-4 md:p-8   min-h-[50%] ">
+            <div class=" relative grow rounded-xl overflow-hidden font-poppins" data-aos="fade-zoom-in"
+                data-aos-duration="2000">
+                <img class="w-full h-full object-cover rounded-xl" src="./images/MS7nySsP.jpeg">
+                <div class="absolute bottom-0 left-0 w-full bg-[rgba(0,0,0,0.89)] p-4   min-h-[50%] ">
                     <p>
                         Co-fondatrice et directrice:
                     </p>
                     <p class="text-[#CE603B] text-base md:text-xl lg:text-2xl">
                         Dr RABESOA Joëlle
                     </p>
-                    <div class="p-4"></div>
+                    <div class="p-2"></div>
                     <p>
                         Médecin specialiste en santé publique , expériences plus de 20 ans ,
 
@@ -416,16 +431,17 @@
                     </p>
                 </div>
             </div>
-            <div class=" relative grow  rounded-xl overflow-hidden font-poppins" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="500">
+            <div class=" relative grow  rounded-xl overflow-hidden font-poppins" data-aos="fade-zoom-in"
+                data-aos-duration="2000" data-aos-delay="500">
                 <img class="w-full h-full object-cover rounded-xl" src="./images/Haritoky.png">
-                <div class="absolute bottom-0 left-0 w-full bg-[rgba(0,0,0,0.89)] p-4 md:p-8   min-h-[50%]  ">
+                <div class="absolute bottom-0 left-0 w-full bg-[rgba(0,0,0,0.89)] p-4   min-h-[50%]  ">
                     <p>
                         Co-fondateur:
                     </p>
                     <p class="text-[#CE603B] text-base md:text-xl lg:text-2xl">
                         Dr MILARIMANANA Harotoky
                     </p>
-                    <div class="p-4"></div>
+                    <div class="p-2"></div>
                     <p>
                         Directeur de cours
 
@@ -446,9 +462,10 @@
 
         </div>
     </section>
-    <div class="p-8"></div>
+    <div class="p-2"></div>
     <section class="flex flex-col px-6 sm:px-12 lg:px-24 min-h-[100vh] max-h-[100vh] font-poppins h-[100vh]" id="blog">
-        <h1 class="block text-3xl h-[22vh] sm:text-4xl lg:text-5xl font-poppins text-black" data-aos="fade-right" data-aos-duration="1000">
+        <h1 class="block text-3xl h-[22vh] sm:text-4xl lg:text-5xl font-poppins text-black" data-aos="fade-right"
+            data-aos-duration="1000">
             L'expérience<span class="bg-[#D7EEDD] rounded-full px-2"> Dé-</span>Connecté <br>
             <span class="relative">
                 en imag<svg class="block absolute w-fill -bottom-1 -left-3" viewBox="0 0 372 33" fill="none"
@@ -461,7 +478,8 @@
 
         <div class="h-[75vh] flex gap-2">
 
-            <div class="block grow h-full overflow-hidden relative rounded-2xl group" data-aos="fade-right" data-aos-duration="1000">
+            <div class="block grow h-full overflow-hidden relative rounded-2xl group" data-aos="fade-right"
+                data-aos-duration="1000">
                 <img class="block h-full w-full object-cover group-hover:scale-110 transition-all duration-2000"
                     src="./images/La stimulation cognitive.png">
                 <div
@@ -480,8 +498,9 @@
 
             <div class="flex sm:flex-col h-[75vh]  w-[60%] gap-2 sm:w-[50%] shrink-0">
 
-                <div class="flex w-[50%] sm:w-full flex-col h-[75vh] sm:flex-row sm:h-[35%] gap-2  rounded-2xl" >
-                    <div class="grow overflow-hidden relative group rounded-2xl" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                <div class="flex w-[50%] sm:w-full flex-col h-[75vh] sm:flex-row sm:h-[35%] gap-2  rounded-2xl">
+                    <div class="grow overflow-hidden relative group rounded-2xl" data-aos="fade-down"
+                        data-aos-duration="1000" data-aos-delay="500">
                         <img src="./images/Le coin des neurosciences.png"
                             class="block w-full h-full object-cover group-hover:scale-110 transition-all duration-2000 rounded-xl" />
                         <div
@@ -496,7 +515,8 @@
                         </div>
 
                     </div>
-                    <div class="grow overflow-hidden relative group rounded-2xl" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+                    <div class="grow overflow-hidden relative group rounded-2xl" data-aos="fade-left"
+                        data-aos-duration="1000" data-aos-delay="700">
                         <img src="./images/les defis relevés.png"
                             class="block w-full h-full object-cover group-hover:scale-110 transition-all duration-2000 rounded-xl" />
                         <div
@@ -513,8 +533,9 @@
                     </div>
                 </div>
 
-                <div class="w-[50%] sm:w-full sm:grow-5 h-[75vh] sm:h-[60%] overflow-hidden relative group rounded-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
-                    <img src="./images/Les mouvements et relaxations.png"
+                <div class="w-[50%] sm:w-full sm:grow-5 h-[75vh] sm:h-[60%] overflow-hidden relative group rounded-2xl"
+                    data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                    <img src="./images/Gemini_Generated_Image_dvl5ridvl5ridvl5 1.png"
                         class="block w-full h-full object-cover group-hover:scale-110 transition-all duration-2000 rounded-xl" />
                     <div
                         class="absolute left-0 top-0 size-full  bg-[rgba(0,0,0,0)] group-hover:bg-[rgba(0,0,0,0.3)] transition-all duration-1000">
@@ -536,7 +557,8 @@
 
     <div class="p-6"></div>
     <div class="flex justify-center px-3 sm:px-12 lg:px-24 pb-24">
-        <p class="text-[rgba(0,0,0,0.6)] text-sm md:text-base lg:text-xl font-poppins text-center" data-aos="fade-zoom-in" data-aos-duration="2000">
+        <p class="text-[rgba(0,0,0,0.6)] text-sm md:text-base lg:text-xl font-poppins text-center"
+            data-aos="fade-zoom-in" data-aos-duration="2000">
             <strong class="font-bold text-black">
                 <em class="text-[#FF9447]"> L'Institut Dé-connecté</em>
                 n'est pas qu'un centre de formation
@@ -568,208 +590,212 @@
 
 
 </body>
-        <!-- ═══════════════════════════════════════
+<!-- ═══════════════════════════════════════
      INSCRIPTION
 ════════════════════════════════════════ -->
-        <section id="inscription" class="bg-[#112772] text-white py-16 sm:py-24">
-            <div class="container mx-auto px-4 sm:px-6">
-                <div class="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-start max-w-6xl mx-auto">
+<section id="inscription" class="bg-[#112772] text-white py-16 sm:py-24">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-start max-w-6xl mx-auto">
 
-                    <!-- Texte gauche -->
+            <!-- Texte gauche -->
+            <div>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-Poppins uppercase mb-6 sm:mb-8 leading-tight"
+                    data-aos="fade-zoom-in" data-aos-duration="1000">
+                    COMMENCER DES AUJOURD'HUI !!
+                </h2>
+
+                <p class="text-base sm:text-lg text-white/50 font-Poppins mb-6 sm:mb-8 opacity-90 leading-relaxed"
+                    data-aos="fade-zoom-in" data-aos-duration="1500">
+                    La réussite de nos enfants est un travail d'équipe. Téléchargez gratuitement notre outil
+                    "Charte Familiale : Cerveau en pleine forme !" et découvrez comment mettre en place des
+                    rituels simples :
+                </p>
+
+                <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-12 opacity-90 ">
+                    <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins"
+                        data-aos="fade-right" data-aos-duration="500">
+                        <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                        Créer des "Zones de paix" (0 écran).
+                    </li>
+                    <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins"
+                        data-aos="fade-right" data-aos-duration="600">
+                        <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                        Instaurer le couvre-feu numérique pour un meilleur sommeil.
+                    </li>
+                    <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins"
+                        data-aos="fade-right" data-aos-duration="800">
+                        <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                        Le "Défi des parents" pour montrer l'exemple.
+                    </li>
+                </ul>
+
+                <a href="./Charte-familiale.pdf"
+                    class="inline-block bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base"
+                    data-aos="fade-up" data-aos-duration="1000" download="Charte-familiale.pdf">
+                    Recevoir une charte familiale gratuite
+                </a>
+
+                <div class="flex gap-10 sm:gap-16" data-aos="fade-up" data-aos-duration="1000">
                     <div>
-                        <h2 class="text-2xl sm:text-3xl md:text-4xl font-Poppins uppercase mb-6 sm:mb-8 leading-tight" data-aos="fade-zoom-in" data-aos-duration="1000">
-                            COMMENCER DES AUJOURD'HUI !!
-                        </h2>
-
-                        <p
-                            class="text-base sm:text-lg text-white/50 font-Poppins mb-6 sm:mb-8 opacity-90 leading-relaxed" data-aos="fade-zoom-in" data-aos-duration="1500">
-                            La réussite de nos enfants est un travail d'équipe. Téléchargez gratuitement notre outil
-                            "Charte Familiale : Cerveau en pleine forme !" et découvrez comment mettre en place des
-                            rituels simples :
-                        </p>
-
-                        <ul class="space-y-3 sm:space-y-4 mb-8 sm:mb-12 opacity-90 ">
-                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins" data-aos="fade-right" data-aos-duration="500">
-                                <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Créer des "Zones de paix" (0 écran).
-                            </li>
-                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins" data-aos="fade-right" data-aos-duration="600">
-                                <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Instaurer le couvre-feu numérique pour un meilleur sommeil.
-                            </li>
-                            <li class="flex items-start gap-3 text-sm sm:text-base font-medium font-Poppins" data-aos="fade-right" data-aos-duration="800">
-                                <span class="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Le "Défi des parents" pour montrer l'exemple.
-                            </li>
-                        </ul>
-
-                        <a href="./Charte-familiale.pdf"
-                            class="inline-block bg-[#FF9447] hover:bg-[#e8853f] text-white font-medium font-Poppins py-3 px-6 sm:px-8 rounded-full transition-colors mb-10 sm:mb-16 text-sm sm:text-base" data-aos="fade-up" data-aos-duration="1000"
-                            download="Charte-familiale.pdf">
-                            Recevoir une charte familiale gratuite
-                        </a>
-
-                        <div class="flex gap-10 sm:gap-16" data-aos="fade-up" data-aos-duration="1000">
-                            <div>
-                                <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">+500</div>
-                                <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Clients
-                                </div>
-                            </div>
-                            <div>
-                                <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">100%</div>
-                                <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Confiances
-                                </div>
-                            </div>
+                        <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">+500</div>
+                        <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Clients
                         </div>
                     </div>
-
-                    <!-- Formulaire -->
-                    <div class="w-full font-medium font-Poppins" data-aos="fade-zoom-out" data-aos-duration="3000">
-                        <form class="space-y-6 sm:space-y-8" id="inscription_form">
-                            <div>
-                                <input type="text" placeholder="Nom de parents ou responsable" name="nom_responsable"
-                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                            </div>
-                            <div>
-                                <input type="email" placeholder="Adresse email" name="adresse_email"
-                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                            </div>
-                            <div>
-                                <input type="tel" placeholder="Numéro de téléphone" name="telephone"
-                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                            </div>
-                            <div>
-                                <input type="text" placeholder="Nom de l'enfant" name="nom_enfant"
-                                    class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                            </div>
-                            <div class="grid grid-cols-2 gap-4 sm:gap-8">
-                                <div>
-                                    <input type="text" placeholder="Age de l'enfant" name="age"
-                                        class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                                </div>
-                                <div>
-                                    <input type="text" placeholder="Classe" name="classe"
-                                        class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
-                                </div>
-                            </div>
-                            <div class="pt-4 flex justify-center">
-                                <button type="submit" id="submit_inscription" name="submit_inscription" value="submit"
-                                    class="bg-gradient-to-r from-[#FF9447] to-[#FFD902] text-white font-bold py-3 px-8 sm:px-12 rounded-full shadow-lg hover:scale-105 transition-transform text-sm sm:text-base">
-                                    Inscrivez-vous
-                                </button>
-                            </div>
-                        </form>
+                    <div>
+                        <div class="text-4xl sm:text-5xl md:text-6xl font-Poppins font-bold">100%</div>
+                        <div class="text-sm sm:text-lg tracking-widest font-medium font-Poppins mt-1">Confiances
+                        </div>
                     </div>
-
                 </div>
             </div>
-        </section>
+
+            <!-- Formulaire -->
+            <div class="w-full font-medium font-Poppins" data-aos="fade-zoom-out" data-aos-duration="3000">
+                <form class="space-y-6 sm:space-y-8" id="inscription_form">
+                    <div>
+                        <input type="text" placeholder="Nom de parents ou responsable" name="nom_responsable"
+                            class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Adresse email" name="adresse_email"
+                            class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="Numéro de téléphone" name="telephone"
+                            class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Nom de l'enfant" name="nom_enfant"
+                            class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 sm:gap-8">
+                        <div>
+                            <input type="text" placeholder="Age de l'enfant" name="age"
+                                class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Classe" name="classe"
+                                class="w-full bg-transparent border-b border-white/30 py-3 px-2 text-white placeholder:text-white/70 focus:outline-none focus:border-[#FF9447] transition-colors text-sm sm:text-base">
+                        </div>
+                    </div>
+                    <div class="pt-4 flex justify-center">
+                        <button type="submit" id="submit_inscription" name="submit_inscription" value="submit"
+                            class="bg-gradient-to-r from-[#FF9447] to-[#FFD902] text-white font-bold py-3 px-8 sm:px-12 rounded-full shadow-lg hover:scale-105 transition-transform text-sm sm:text-base">
+                            Inscrivez-vous
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
-        <!-- ═══════════════════════════════════════
+<!-- ═══════════════════════════════════════
      FOOTER
 ════════════════════════════════════════ -->
-        <footer class="bg-white py-8 px-4 sm:px-6 font-sans">
-            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 items-start">
+<footer class="bg-white py-8 px-4 sm:px-6 font-sans">
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 items-start">
 
-                <!-- Brand -->
-                <aside class="space-y-5 sm:space-y-6" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="block w-48">
-                        <img src="assets/Logo_texted.png" class="block object-fit" alt="">
-                    </div>
-
-                    <nav class="flex gap-4 sm:gap-5 items-center flex-wrap" aria-label="Réseaux sociaux">
-                        <!-- Facebook -->
-                        <a href="https://web.facebook.com/profile.php?id=61579571357584" target="_blank"
-                            rel="noopener noreferrer"
-                            class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                            <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                            </svg>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                        <!-- WhatsApp -->
-                        <a href="https://wa.me/261347799424" target="_blank" rel="noopener noreferrer"
-                            class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                            <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                            </svg>
-                            <span class="sr-only">WhatsApp</span>
-                        </a>
-                        <!-- Instagram -->
-                        <a href="https://www.linkedin.com/company/institut-d%C3%A9-connect%C3%A9/?viewAsMember=true"
-                            target="_blank" rel="noopener noreferrer"
-                            class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                            <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                            </svg>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                        <!-- LinkedIn -->
-                        <a href="https://www.instagram.com/deconnecte2026/" target="_blank" rel="noopener noreferrer"
-                            class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
-                            <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </nav>
-
-                    <p class="text-sm sm:text-xs lg:text-sm text-gray-500 max-w-xs leading-relaxed font-Poppins">
-                        Ensemble, nous pouvons réveiller le Génie qui dort en chaque enfant. <br>
-                        <span class="text-[#3A3DFF] font-medium cursor-pointer">"Approche innovative de l'Institut
-                            Dé-connecté"</span>
-                    </p>
-                </aside>
-
-                <!-- Liens utiles -->
-                <nav class="space-y-3 sm:space-y-4 font-Jost" data-aos="fade-up" data-aos-duration="1000">
-                    <h3 class="font-bold text-gray-900 uppercase text-sm sm:text-base lg:text-lg tracking-widest ">Liens
-                        utiles</h3>
-                    <ul class="space-y-2 sm:space-y-3 text-black text-sm font-Poppins">
-                        <li><a href="../" class="hover:text-[#3A3DFF] transition-colors">Accueil</a></li>
-                        <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">A propos</a>
-                        </li>
-                        <li><a href="../ateliers" class="hover:text-[#3A3DFF] transition-colors">Nos
-                                ateliers</a></li>
-                        <li><a href="../contact" class="hover:text-[#3A3DFF] transition-colors">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <!-- CTA Footer -->
-                <article class="space-y-4 sm:space-y-6" data-aos="fade-zoom-in" data-aos-duration="2000">
-                    <h3 class="text-base font-medium font-Poppins text-[#1E1E1E] leading-tight font-Poppins">
-                        Offrez à votre enfant les clés de sa réussite numérique. Réservez sa place pour la prochaine
-                        session et retrouvez la sérénité à la maison.
-                    </h3>
-                    <hr class="border-black w-full sm:w-64 md:w-72 lg:w-96">
-                    <div class="flex justify-start sm:justify-end">
-                        <a href="#inscription"
-                            class="bg-gradient-to-r from-[#FF9447] to-[#FFE100] text-white font-semibold text-base py-3 px-8 sm:px-12 rounded-2xl shadow-lg hover:shadow-xl hover:brightness-110 transition-all transform hover:-translate-y-1 inline-block">
-                            Inscrivez-vous
-                        </a>
-                    </div>
-                    <p class="text-xs sm:text-sm text-gray-500 font-medium font-Poppins">
-                        Les places sont limitées pour garantir un suivi de qualité
-                    </p>
-                </article>
+        <!-- Brand -->
+        <aside class="space-y-5 sm:space-y-6" data-aos="fade-right" data-aos-duration="1000">
+            <div class="block w-48">
+                <img src="assets/Logo_texted.png" class="block object-fit" alt="">
             </div>
 
-            <!-- Adresse -->
-            <div class="container mx-auto mt-4 sm:mt-6 pt-6 sm:pt-8 border-t border-gray-100" >
-                <div class="flex items-center gap-2 text-black text-sm sm:text-base lg:text-lg">
-                    <svg class="h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <nav class="flex gap-4 sm:gap-5 items-center flex-wrap" aria-label="Réseaux sociaux">
+                <!-- Facebook -->
+                <a href="https://web.facebook.com/profile.php?id=61579571357584" target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
                         <path
-                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                     </svg>
-                    <span class="font-light text-sm">Antananarivo - Madagascar</span>
-                </div>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/261347799424" target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    <span class="sr-only">WhatsApp</span>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.linkedin.com/company/institut-d%C3%A9-connect%C3%A9/?viewAsMember=true"
+                    target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.instagram.com/deconnecte2026/" target="_blank" rel="noopener noreferrer"
+                    class="text-[#FF9447] hover:text-orange-600 hover:scale-110 transition-all duration-300">
+                    <svg class="h-10 w-10 sm:h-8 sm:w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </nav>
+
+            <p class="text-sm sm:text-xs lg:text-sm text-gray-500 max-w-xs leading-relaxed font-Poppins">
+                Ensemble, nous pouvons réveiller le Génie qui dort en chaque enfant. <br>
+                <span class="text-[#3A3DFF] font-medium cursor-pointer">"Approche innovative de l'Institut
+                    Dé-connecté"</span>
+            </p>
+        </aside>
+
+        <!-- Liens utiles -->
+        <nav class="space-y-3 sm:space-y-4 font-Jost" data-aos="fade-up" data-aos-duration="1000">
+            <h3 class="font-bold text-gray-900 uppercase text-sm sm:text-base lg:text-lg tracking-widest ">Liens
+                utiles</h3>
+            <ul class="space-y-2 sm:space-y-3 text-black text-sm font-Poppins">
+                <li><a href="../" class="hover:text-[#3A3DFF] transition-colors">Accueil</a></li>
+                <li><a href="#" class="hover:text-[#3A3DFF] transition-colors">A propos</a>
+                </li>
+                <li><a href="../ateliers" class="hover:text-[#3A3DFF] transition-colors">Nos
+                        ateliers</a></li>
+                <li><a href="../contact" class="hover:text-[#3A3DFF] transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- CTA Footer -->
+        <article class="space-y-4 sm:space-y-6" data-aos="fade-zoom-in" data-aos-duration="2000">
+            <h3 class="text-base font-medium font-Poppins text-[#1E1E1E] leading-tight font-Poppins">
+                Offrez à votre enfant les clés de sa réussite numérique. Réservez sa place pour la prochaine
+                session et retrouvez la sérénité à la maison.
+            </h3>
+            <hr class="border-black w-full sm:w-64 md:w-72 lg:w-96">
+            <div class="flex justify-start sm:justify-end">
+                <a href="#inscription"
+                    class="bg-gradient-to-r from-[#FF9447] to-[#FFE100] text-white font-semibold text-base py-3 px-8 sm:px-12 rounded-2xl shadow-lg hover:shadow-xl hover:brightness-110 transition-all transform hover:-translate-y-1 inline-block">
+                    Inscrivez-vous
+                </a>
             </div>
-        </footer>
+            <p class="text-xs sm:text-sm text-gray-500 font-medium font-Poppins">
+                Les places sont limitées pour garantir un suivi de qualité
+            </p>
+        </article>
+    </div>
+
+    <!-- Adresse -->
+    <div class="container mx-auto mt-4 sm:mt-6 pt-6 sm:pt-8 border-t border-gray-100">
+        <div class="flex items-center gap-2 text-black text-sm sm:text-base lg:text-lg">
+            <svg class="h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            <span class="font-light text-sm">Antananarivo - Madagascar</span>
+        </div>
+    </div>
+</footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../anim.js"></script>
