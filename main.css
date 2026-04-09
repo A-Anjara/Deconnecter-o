@@ -518,9 +518,6 @@
   .max-h-screen {
     max-height: 100vh;
   }
-  .min-h-\[50\%\] {
-    min-height: 50%;
-  }
   .min-h-\[100vh\] {
     min-height: 100vh;
   }
@@ -538,6 +535,9 @@
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
+  }
+  .w-6\/8 {
+    width: calc(6 / 8 * 100%);
   }
   .w-6\/9 {
     width: calc(6 / 9 * 100%);
@@ -2215,11 +2215,6 @@
       width: calc(var(--spacing) * 8);
     }
   }
-  .sm\:w-21\/24 {
-    @media (width >= 40rem) {
-      width: calc(21 / 24 * 100%);
-    }
-  }
   .sm\:w-24 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 24);
@@ -2582,6 +2577,11 @@
       height: 560px;
     }
   }
+  .md\:w-4\/8 {
+    @media (width >= 48rem) {
+      width: calc(4 / 8 * 100%);
+    }
+  }
   .md\:w-4\/9 {
     @media (width >= 48rem) {
       width: calc(4 / 9 * 100%);
@@ -2595,11 +2595,6 @@
   .md\:w-12 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 12);
-    }
-  }
-  .md\:w-18\/24 {
-    @media (width >= 48rem) {
-      width: calc(18 / 24 * 100%);
     }
   }
   .md\:w-32 {
@@ -2755,6 +2750,11 @@
   .md\:px-16 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:py-12 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 12);
     }
   }
   .md\:pr-20 {
@@ -3063,6 +3063,11 @@
   .xl\:w-96 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 96);
+    }
+  }
+  .xl\:py-1 {
+    @media (width >= 80rem) {
+      padding-block: calc(var(--spacing) * 1);
     }
   }
 }
